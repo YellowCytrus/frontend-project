@@ -10,6 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(fileURLToPath(new URL('.', import.meta.url)), 'index.html'),
+        budanov: resolve(fileURLToPath(new URL('.', import.meta.url)), 'budanov.html'),
+        dydin: resolve(fileURLToPath(new URL('.', import.meta.url)), 'dydin.html'),
       },
     },
   },
