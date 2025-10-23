@@ -1,122 +1,119 @@
 /* Special collection styles */
 .special-collection {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: var(--color-white);
-    padding: 40px 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: var(--color-white);
+  padding: 40px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .special-collection__item {
-    flex: 0 0 180px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 0 0 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .special-collection__item__image {
-    position: relative;
-    width: 395px;
-    height: 408px;
-    margin-bottom: 15px;
-    overflow: hidden;
+  position: relative;
+  width: 395px;
+  height: 408px;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .special-collection__item__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .special-collection__item__image:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .special-collection__item__rectangle {
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    background-color: var(--color-light-gray);
-    z-index: 1;
+  position: absolute;
+  inset: -8px;
+  background-color: var(--color-light-gray);
+  z-index: 1;
 }
 
 .special-collection__item__title {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--color-black);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-    margin: 0;
-    max-width: 250px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 250px;
 }
 
 /* Responsive design */
-@media (max-width: 1024px) {
-    .special-collection {
-        gap: 15px;
-        justify-content: center;
-    }
-    
-    .special-collection__item {
-        flex: 0 0 160px;
-    }
-    
-    .special-collection__item__image {
-        width: 160px;
-        height: 160px;
-    }
+@media (width <= 1024px) {
+  .special-collection {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .special-collection__item {
+    flex: 0 0 160px;
+  }
+
+  .special-collection__item__image {
+    width: 160px;
+    height: 160px;
+  }
 }
 
-@media (max-width: 768px) {
-    .special-collection {
-        flex-direction: row;
-        gap: 15px;
-        padding: 30px 0;
-        margin-left: 5%;
-        margin-right: 5%;
-        justify-content: center;
-    }
-    
-    .special-collection__item {
-        flex: 0 0 140px;
-    }
-    
-    .special-collection__item__image {
-        width: 140px;
-        height: 140px;
-    }
+@media (width <= 768px) {
+  .special-collection {
+    flex-direction: row;
+    gap: 15px;
+    padding: 30px 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+  }
+
+  .special-collection__item {
+    flex: 0 0 140px;
+  }
+
+  .special-collection__item__image {
+    width: 140px;
+    height: 140px;
+  }
 }
 
-@media (max-width: 600px) {
-    .special-collection {
-        flex-direction: column;
-        gap: 25px;
-        align-items: center;
-    }
-    
-    .special-collection__item {
-        flex: none;
-        width: 180px;
-    }
-    
-    .special-collection__item__image {
-        width: 180px;
-        height: 180px;
-    }
+@media (width <= 600px) {
+  .special-collection {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .special-collection__item {
+    flex: none;
+    width: 180px;
+  }
+
+  .special-collection__item__image {
+    width: 180px;
+    height: 180px;
+  }
 }
 
-@media (max-width: 480px) {
-    .special-collection__item__title {
-        font-size: 11px;
-    }
+@media (width <= 480px) {
+  .special-collection__item__title {
+    font-size: 11px;
+  }
 }
