@@ -1,0 +1,27 @@
+.top-bar {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  height: 32px;
+}
+
+.top-bar__left {
+  flex: 1;
+}
+
+.top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
