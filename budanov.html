@@ -12,40 +12,238 @@
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+    <link rel="stylesheet" href="./src/styles/budanov.css">
   </head>
   <body>
     <script type="module" src="/src/budanov.js"></script>
 
+    <!-- Top bar -->
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*</span>
+      </div>
+      <div class="top-bar__right">
+        <span><a href="">Sign In</a>/<a href="">Register</a></span>
+        <div class="currency-selector">
+          <button class="currency-selector__button" onclick="toggleCurrencyDropdown()">
+            <span class="currency-flag">🇺🇸</span>
+            <span class="currency-code">USD</span>
+            <span class="currency-arrow">▼</span>
+          </button>
+          <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-option" onclick="selectCurrency('🇺🇸', 'USD')">
+              <span class="currency-flag">🇺🇸</span>
+              <span class="currency-code">USD</span>
+            </div>
+            <div class="currency-option" onclick="selectCurrency('🇷🇺', 'RUB')">
+              <span class="currency-flag">🇷🇺</span>
+              <span class="currency-code">RUB</span>
+            </div>
+            <div class="currency-option" onclick="selectCurrency('🇰🇿', 'KZT')">
+              <span class="currency-flag">🇰🇿</span>
+              <span class="currency-code">KZT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Main header -->
     <header class="header">
+      <div class="header__container">
         <div class="logo">
-          <!-- <img src=""> -->
+          <img src="src/static/budanov/pictures/texts/GOOD4ME_logo.png" alt="GOOD4ME." >
         </div>
         <nav class="header__nav">
-            <ul>
-              <li class="header__nav-item"> <a href="#HOME" class="header__nav-link">HOME</a> </li>
-            </ul>
-            <ul>
-              <li class="header__nav-item"> <a href="#SHOP" class="header__nav-link">SHOP</a> </li>
-            </ul>
-            <ul>
-              <li class="header__nav-item"> <a href="#FAQ" class="header__nav-link">FAQ'S</a> </li>
-            </ul>
-            <ul>
-              <li class="header__nav-item"> <a href="#STOCKISTS" class="header__nav-link">STOCKISTS</a> </li>
-            </ul>
-            <ul>
-              <li class="header__nav-item"> <a href="#WHOLESALE" class="header__nav-link">WHOLESALE</a> </li>
-            </ul>
-            <ul>
-              <li class="header__nav-item"> <a href="#CONTACT" class="header__nav-link">CONTACT</a> </li>
-            </ul>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#HOME" class="header__nav-link">HOME</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#SHOP" class="header__nav-link">SHOP</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#FAQ" class="header__nav-link">FAQ'S</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#STOCKISTS" class="header__nav-link">STOCKISTS</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#WHOLESALE" class="header__nav-link">WHOLESALE</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#CONTACT" class="header__nav-link">CONTACT</a>
+            </li>
+          </ul>
         </nav>
+        <div class="header__actions">
+          <button class="header__search">🔍</button>
+          <button class="header__cart">
+            🛒
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <div class="container">
-      <h1>Кирилл Буданов</h1>
-      <p>КИ23-14Б</p>
-    </div>
+    <!-- Main content -->
+    <main class="main">
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__text">
+            <div class="hero__brand">Good4Me</div>
+            <h1 class="hero__title">Apple Cider Vinegar</h1>
+            <p class="hero__description">Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime.</p>
+            <button class="hero__button">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="hero__tear">
+          <img src="src/static/budanov/pictures/visuals/picture-152.png" alt="Torn paper effect">
+        </div>
+      </section>
+
+      <!-- Deal section -->
+      <section class="deal">
+        <h2 class="deal__title">GOOD4ME DEAL</h2>
+        <div class="deal__line"></div>
+        <p class="deal__description">Pick your beauty products today. 50% OFF on the most popular GOOD4ME. Order all classy products today!</p>
+      </section>
+
+      <!-- Special collections -->
+      <section class="special-collection">
+        
+      </section>
+
+      <!-- Reviews section -->
+      <section class="reviews">
+        <h2 class="reviews__title">REAL REVIEWS</h2>
+        <div class="reviews__item">
+          <h3 class="reviews__subtitle">REAL RESULTS</h3>
+          <p class="reviews__text">"We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our website. We can't wait until you are a part of our Good4Me Family."</p>
+          <p class="reviews__author">- Chloe H.</p>
+          <div class="reviews__carousel">
+            <button class="reviews__carousel-button reviews__carousel-button--prev">◄</button>
+            <button class="reviews__carousel-button reviews__carousel-button--next">►</button>
+          </div>
+        </div>
+        <div class="reviews__image">
+          <img class="reviews__image-pic" src="review-image.jpg" alt="Review Image">
+          <p class="reviews__image-text">in love with your products! The gummies have been so helpful with morning sickness & hair growth ☺️ also, they taste delicious!</p>
+          <p class="reviews__image-author">- Tess A.</p>
+        </div>
+      </section>
+
+      <!-- Social media section -->
+      <section class="social">
+        <h2 class="social__title">#GOOD4ME</h2>
+        <div class="social__gallery">
+          <div class="social__item"><img class="social__item-image" src="social1.jpg" alt="Social Media 1"></div>
+          <div class="social__item"><img class="social__item-image" src="social2.jpg" alt="Social Media 2"></div>
+          <div class="social__item"><img class="social__item-image" src="social3.jpg" alt="Social Media 3"></div>
+          <div class="social__item"><img class="social__item-image" src="social4.jpg" alt="Social Media 4"></div>
+          <div class="social__item"><img class="social__item-image" src="social5.jpg" alt="Social Media 5"></div>
+        </div>
+      </section>
+
+      <!-- Take Control section -->
+      <section class="take-control">
+        <h2 class="take-control__title">TAKE CONTROL OF YOUR HEALTH</h2>
+        <p class="take-control__description">The Good4Me range has been formulated based on scientific & traditional evidence. Our vitamins are here and ready to boost your mood, immunity and overall well-being! Made in New Zealand from local and imported ingredients.</p>
+        <button class="take-control__button">BROWSE OUR RANGE</button>
+      </section>
+
+      <!-- Latest News section -->
+      <section class="news">
+        <h2 class="news__title">LATEST NEWS</h2>
+        <div class="news__list">
+          <div class="news__item">
+            <img class="news__item-image" src="news1.jpg" alt="News 1">
+            <p class="news__item-date">August 26, 2020</p>
+            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
+            <p class="news__item-description">We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve...</p>
+            <button class="news__item-button">READ MORE</button>
+          </div>
+          <div class="news__item">
+            <img class="news__item-image" src="news2.jpg" alt="News 2">
+            <p class="news__item-date">August 26, 2020</p>
+            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
+            <p class="news__item-description">We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve...</p>
+            <button class="news__item-button">READ MORE</button>
+          </div>
+          <div class="news__item">
+            <img class="news__item-image" src="news3.jpg" alt="News 3">
+            <p class="news__item-date">August 24, 2020</p>
+            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
+            <p class="news__item-description">We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve...</p>
+            <button class="news__item-button">READ MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section class="features">
+        <div class="features__item">
+          <img class="features__item-icon" src="shipping-icon.svg" alt="Worldwide Shipping">
+          <h3 class="features__item-title">WORLDWIDE SHIPPING</h3>
+          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
+        </div>
+        <div class="features__item">
+          <img class="features__item-icon" src="guarantee-icon.svg" alt="30 Days Guarantee">
+          <h3 class="features__item-title">30 DAYS GUARANTEE</h3>
+          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
+        </div>
+        <div class="features__item">
+          <img class="features__item-icon" src="payment-icon.svg" alt="Secured Payments">
+          <h3 class="features__item-title">SECURED PAYMENTS</h3>
+          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h3 class="footer__column-title">GOOD4ME.</h3>
+          <p class="footer__column-text">Good health is important, so all of our products have been carefully designed to bring out the best in you.</p>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-title">Keep In Touch</h3>
+          <p class="footer__column-text">Subscribe to receive new product updates, be the first to know about sales, and more.</p>
+          <input class="footer__input" type="email" placeholder="Enter your email address">
+          <button class="footer__button">SUBSCRIBE</button>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-title">More Info</h3>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">Shipping & Delivery</li>
+            <li class="footer__column-item">Refund Policy</li>
+            <li class="footer__column-item">Partner Program</li>
+            <li class="footer__column-item">Wholesale Portal</li>
+            <li class="footer__column-item">You Buy, We Donate</li>
+            <li class="footer__column-item">Privacy Policy</li>
+            <li class="footer__column-item">Terms & Conditions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">🐦</a>
+          <a href="#" class="footer__social-link">📘</a>
+          <a href="#" class="footer__social-link">🐷</a>
+          <a href="#" class="footer__social-link">🎥</a>
+        </div>
+        <p class="footer__copyright">© 2021, GOOD4ME. Powered by Shopify</p>
+        <div class="footer__payments">
+          <img class="footer__payment-icon" src="visa.svg" alt="Visa">
+          <img class="footer__payment-icon" src="mastercard.svg" alt="Mastercard">
+          <img class="footer__payment-icon" src="amex.svg" alt="Amex">
+          <img class="footer__payment-icon" src="paypal.svg" alt="PayPal">
+          <img class="footer__payment-icon" src="applepay.svg" alt="Apple Pay">
+          <img class="footer__payment-icon" src="googlepay.svg" alt="Google Pay">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
