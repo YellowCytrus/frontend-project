@@ -1,5 +1,7 @@
-@import './styles/global/media.css';
-@import './styles/colors/colors.css';
-@import './styles/normalize.css';
-@import './styles/global/utility.css';
-@import './styles/components/container.css';
+@import './colors/colors.css';
+@import './global/media.css';
+@import './global/utility.css';
+@import './components/header.css';
+@import './components/hero.css';
+@import './components/top-bar.css';
+@import './components/deal.css';
