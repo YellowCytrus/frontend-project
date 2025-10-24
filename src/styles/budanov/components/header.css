@@ -94,26 +94,25 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .top-bar {
     flex-direction: column;
     gap: 8px;
     text-align: center;
   }
-  
+
   .header__container {
     flex-direction: column;
     gap: 16px;
   }
-  
+
   .header__nav-list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
   }
-  
+
   .header__actions {
     order: -1;
   }
 }
-

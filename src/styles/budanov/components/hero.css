@@ -1,10 +1,10 @@
 /* Hero section styles */
 .hero {
   background-color: var(--color-white);
-  background-image: url(../../../static/budanov/pictures/picture-50.png);
+  background-image: url('../../../static/budanov/pictures/picture-50.png');
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: center top left;
+  background-position: center top;
   position: relative;
   top: 0;
   left: 0;
@@ -22,7 +22,6 @@
   padding-top: 140px;
   padding-left: 5%;
 }
-
 
 .hero__text {
   flex: 1;
@@ -70,50 +69,50 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(246, 98, 62, 0.3);
+  box-shadow: 0 4px 15px rgb(246 98 62 / 30%);
 }
 
 .hero__button:hover {
-  background-color: #E55A2B;
+  background-color: #e55a2b;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(246, 98, 62, 0.4);
+  box-shadow: 0 6px 20px rgb(246 98 62 / 40%);
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .hero {
     background-position: center top;
     background-size: cover;
     min-height: 500px;
   }
-  
+
   .hero__content {
     flex-direction: column;
     text-align: center;
     min-height: 500px;
     justify-content: center;
   }
-  
+
   .hero__text {
     max-width: 100%;
     margin-left: 0;
     padding-left: 0;
     margin-top: 200px;
   }
-  
+
   .hero__title {
     font-size: 36px;
   }
-  
+
   .hero__description {
     font-size: 16px;
   }
-  
+
   .hero__product-bottle {
     width: 150px;
     height: 220px;
   }
-  
+
   .hero__product-bottle--lying {
     width: 130px;
     height: 200px;
