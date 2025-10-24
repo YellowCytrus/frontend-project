@@ -61,7 +61,7 @@
   display: grid;
   width: 35%;
   height: 680px;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: calc(0.225 * screen.width) calc(0.255 * screen.width);
   gap: 15px;
   z-index: 1;
 }
@@ -87,6 +87,3 @@
   grid-row: 1 / 3;
 }
 
-.take-control__images_3 img {
-  object-fit: none !important;
-}
