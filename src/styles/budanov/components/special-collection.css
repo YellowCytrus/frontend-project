@@ -2,6 +2,7 @@
 .special-collection {
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 135px;
   background-color: var(--color-white);
   padding: 40px 0;
   display: flex;
