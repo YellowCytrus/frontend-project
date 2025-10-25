@@ -12,14 +12,67 @@
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+    <link rel="stylesheet" href="./src/styles/dydin/main.css" />
   </head>
   <body>
     <script type="module" src="/src/dydin.js"></script>
-
-    <div class="container">
-      <h1>Денис Дыдин</h1>
-      <p>КИ23-14Б</p>
-      <p>Здесь будет верстка по макету из Figma</p>
+    <div class="hero">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__content">
+            <img class="logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
+            <ul class="nav__content__list">
+              <li class="nav__content__item">
+                <a class="nav__content__link-chevron" href="#">Service</a>
+              </li>
+              <li class="nav__content__item">
+                <a class="nav__content__link" href="#">Case Studies</a>
+              </li>
+              <li class="nav__content__item">
+                <a class="nav__content__link" href="#">About Us</a>
+              </li>
+              <li class="nav__content__item">
+                <a class="nav__content__link" href="#">Blog</a>
+              </li>
+              <li class="nav__content__item">
+                <a class="nav__content__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <button class="nav__button button">Talk to a human</button>
+        </nav>
+      </header>
+      <div class="hero__content">
+        <ul class="hero__content__route">
+          <li class="hero__content__item">
+            <a class="hero__content__link" href="#"></a>
+          </li>
+          <li class="hero__content__item">
+            <a class="hero__content__link" href="#"></a>
+          </li>
+          <li>
+            <a class="hero__content__link" href="#">services</a>
+          </li>
+        </ul>
+        <div class="hero__content__information">
+          <h2 class="hero__content__title">Our services</h2>
+          <p class="hero__content__description">
+            We offer more than services. Our agency provides solutions to your top-priority concerns, involving customer
+            targeting, email performance and sales growth. If there is no existing solution readily available, we create
+            one, specifically to suit your business.
+          </p>
+        </div>
+        <div class="start">
+          <button class="start__button">Start now</button>
+          <div class="start__content">
+            <img class="start__content__image" src="src/static/dydin/svg/phone.svg" alt="phone" />
+            <div class="start__content__call">
+              <h4 class="start__content__title">Call us</h4>
+              <p class="start__content__description">(405) 555-0128</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
