@@ -1,105 +1,104 @@
 .reviews {
-    background-color: var(--color-dark-peach);
-    position: relative;
-    height: 885px;
+  background-color: var(--color-dark-peach);
+  position: relative;
+  height: 885px;
 }
 
 .reviews__top-slidershow {
-    transform: rotate(180deg);
-    height: 129px;
-    z-index: 1;
+  transform: rotate(180deg);
+  height: 129px;
+  z-index: 1;
 }
 
 .reviews__bottom-slidershow {
-    height: 129px;
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  height: 129px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .reviews__wrap {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .reviews__wrap__list__stars {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
-
 .reviews__wrap__list__buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .reviews__wrap__list__buttons__left {
-    width: 44px;
-    height: 44px;
-    border: none;
-    background-image: url('../../../static/budanov/svg/arrow_button_left.svg');
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-image: url('../../../static/budanov/svg/arrow_button_left.svg');
 }
 
 .reviews__wrap__list__buttons__right {
-    width: 44px;
-    height: 44px;
-    border: none;
-    background-image: url('../../../static/budanov/svg/arrow_button_right.svg');
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-image: url('../../../static/budanov/svg/arrow_button_right.svg');
 }
 
 .reviews__wrap__list {
-    flex: 1;
-    max-width: 500px;
-    padding: 80px 0;
-    margin-right: 60px;
+  flex: 1;
+  max-width: 500px;
+  padding: 80px 0;
+  margin-right: 60px;
 }
 
 .reviews__wrap__pic {
-    width: 534px;
-    height: auto;
-    flex-shrink: 0;
+  width: 534px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .reviews__wrap__list__header {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    color: var(--color-black);
-    margin: 0 0 8px 0;
-    letter-spacing: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--color-black);
+  margin: 0 0 8px;
+  letter-spacing: 2px;
 }
 
 .reviews__wrap__list__title {
-    font-family: 'Arial', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--color-orange);
-    margin: 0 0 20px 0;
-    line-height: 1.2;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-orange);
+  margin: 0 0 20px;
+  line-height: 1.2;
 }
 
 .reviews__wrap__list__content {
-    font-family: 'Arial', sans-serif;
-    font-size: 22px;
-    line-height: 1.6;
-    color: var(--color-light-black);
-    margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.6;
+  color: var(--color-light-black);
+  margin: 20px 0;
 }
 
 .reviews__wrap__list__author {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: var(--color-orange);
-    margin: 20px 0 30px 0;
-    font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--color-orange);
+  margin: 20px 0 30px;
+  font-weight: bold;
 }

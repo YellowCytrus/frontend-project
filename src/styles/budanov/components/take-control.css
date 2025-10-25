@@ -61,7 +61,7 @@
   display: grid;
   width: 35%;
   height: 680px;
-  grid-template-columns: calc(0.225 * screen.width) calc(0.255 * screen.width);
+  grid-template-columns: 22.5vw 25.5vw;
   gap: 15px;
   z-index: 1;
 }
@@ -86,4 +86,3 @@
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 }
-
