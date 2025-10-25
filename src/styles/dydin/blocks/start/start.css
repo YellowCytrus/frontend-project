@@ -1,0 +1,39 @@
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.start__content {
+  display: flex;
+  gap: 20px;
+}
+
+.start__button {
+  background-color: rgba(28, 28, 28, 0);
+  font-weight: 700;
+  color: white;
+  line-height: 52px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid white;
+}
+
+.start__content__title {
+  color: white;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  opacity: 60%;
+}
+
+.start__content__description {
+  color: white;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+}
