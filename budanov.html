@@ -24,26 +24,13 @@
       </div>
       <div class="top-bar__right">
         <span><a href="">Sign In</a>/<a href="">Register</a></span>
+        <div class="top-bar__right__sep"></div>
         <div class="currency-selector">
           <button class="currency-selector__button" onclick="toggleCurrencyDropdown()">
-            <span class="currency-flag">🇺🇸</span>
+            <img src="src/static/budanov/svg/usd.svg" alt="USD" class="currency-flag" />
             <span class="currency-code">USD</span>
-            <span class="currency-arrow">▼</span>
+            <img src="src/static/budanov/svg/selector_arrow.svg" alt="Arrow" class="currency-arrow" />
           </button>
-          <div class="currency-dropdown" id="currencyDropdown">
-            <div class="currency-option" onclick="selectCurrency('🇺🇸', 'USD')">
-              <span class="currency-flag">🇺🇸</span>
-              <span class="currency-code">USD</span>
-            </div>
-            <div class="currency-option" onclick="selectCurrency('🇷🇺', 'RUB')">
-              <span class="currency-flag">🇷🇺</span>
-              <span class="currency-code">RUB</span>
-            </div>
-            <div class="currency-option" onclick="selectCurrency('🇰🇿', 'KZT')">
-              <span class="currency-flag">🇰🇿</span>
-              <span class="currency-code">KZT</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -77,9 +64,11 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <button class="header__search">🔍</button>
+          <button class="header__search">
+            <img src="src/static/budanov/svg/search.svg" alt="Search" />
+          </button>
           <button class="header__cart">
-            🛒
+            <img src="src/static/budanov/svg/trash.png" alt="Cart" />
             <span class="cart-count">0</span>
           </button>
         </div>
@@ -431,6 +420,7 @@
 
     <!-- Footer -->
     <footer class="footer">
+      <img class="footer__slidershow" src="src/static/budanov/pictures/visuals/picture-146.png" alt="" />
       <div class="footer__columns">
         <div class="footer__columns__brand">
           <img
@@ -456,6 +446,33 @@
             />
             <button class="footer__columns__subscribe__form__submit-button">Subscribe</button>
           </form>
+        </div>
+
+        <div class="footer__columns__more-info">
+          <h2 class="footer__columns__more-info__title">MORE INFO</h2>
+          <ul class="footer__columns__more-info__list">
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Shipping & Delivery</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Refund Policy</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Partner Program</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Wholesale Portal</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">You Buy, We Donate</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Privacy Policy</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Terms & Conditions</a>
+            </li>
+          </ul>
         </div>
       </div>
 
