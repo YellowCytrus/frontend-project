@@ -4,7 +4,16 @@
 @import url('blocks/header/header.css');
 @import url('blocks/nav/nav.css');
 @import url('blocks/hero/hero.css');
-@import url('blocks/start/start.css');
+@import url('blocks/analyse/analyse.css');
+@import url('layout/container.css');
+@import url('blocks/cooperation/cooperation.css');
+@import url('blocks/successful/successful.css');
+@import url('blocks/contact/contact.css');
+@import url('blocks/information/information.css');
+@import url('blocks/studies/studies.css');
+@import url('blocks/graph/graph.css');
+@import url('blocks/other/other.css');
+@import url('blocks/footer/footer.css');
 
 body {
   font-family: 'Lato';
@@ -15,4 +24,22 @@ body {
   color: white;
   border-radius: 4px;
   border: none;
+}
+.input {
+  background-color: #ffffff1f;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.input::placeholder {
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
 }
