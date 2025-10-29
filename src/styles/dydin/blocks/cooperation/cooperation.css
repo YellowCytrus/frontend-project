@@ -1,0 +1,14 @@
+.cooperation {
+  padding-top: 100px;
+}
+
+.cooperation__content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.cooperation__content__image {
+  width: 174px;
+  height: 134px;
+}

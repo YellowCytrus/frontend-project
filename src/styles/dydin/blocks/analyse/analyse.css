@@ -1,0 +1,42 @@
+.analyse {
+  padding-bottom: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analyse__container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.analyse__content {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.analyse__content__text {
+  font-size: 16px;
+  line-height: 160%;
+  padding-bottom: 8px;
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+.analyse__content__input {
+  padding: 13px 16px;
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.analyse__content__button {
+  padding: 13px 20px;
+  background: #7772f1;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  border: none;
+}

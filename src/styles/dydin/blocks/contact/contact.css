@@ -1,0 +1,76 @@
+.contact {
+  background: #7772f1;
+  box-shadow:
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
+  border-radius: 4px;
+  background-image: url('/src/static/dydin/pictures/lines-and_dots.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px 60px;
+}
+
+.contact__text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  padding-bottom: 32px;
+  color: white;
+}
+
+.contact__content {
+}
+
+.contact__content__form {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.contact__content__text {
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+}
+
+.contact__content__item {
+  width: 100%;
+}
+
+.contact__content__input {
+  padding: 11px 16px;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  line-height: 150%;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact__content__input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact__content__input::placeholder {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.contact__content__buttoon {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  border: 1px;
+  border-color: black;
+  text-align: center;
+  background-color: #1e212c;
+  color: white;
+}

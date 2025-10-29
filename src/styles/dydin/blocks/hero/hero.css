@@ -1,0 +1,36 @@
+.hero {
+  background: url('/src/static/dydin/pictures/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 653px;
+  position: relative;
+}
+
+.hero__content__information {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 60px;
+}
+
+.hero__content__route {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.hero__content__title {
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  line-height: 130%;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.hero__content__description {
+  color: white;
+  opacity: 0.6;
+  line-height: 150%;
+  font-size: 20px;
+  text-align: center;
+}

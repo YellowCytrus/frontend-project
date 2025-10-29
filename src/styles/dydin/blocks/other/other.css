@@ -1,0 +1,106 @@
+.other__title {
+  font-weight: 900;
+  line-height: 130%;
+  font-size: 46px;
+  color: #1e212c;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.other__tabs {
+  display: flex;
+  justify-content: stretch;
+  padding-bottom: 60px;
+}
+
+.other__content {
+  display: flex;
+}
+
+.other__tabs__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 32px;
+  border: 1px solid #7772f1;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #7772f1;
+  font-weight: 700;
+  flex: 1;
+}
+
+.other__tabs__button-off {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 32px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9a9ca5;
+  flex: 1;
+}
+
+.other__content__information_item {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-wrap: nowrap;
+}
+
+.other__content__information__title {
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.other__content__information_item::before {
+  content: url('/src/static/dydin/svg/mark.svg');
+  width: 16px;
+  vertical-align: middle;
+  height: 16px;
+  padding-right: 13px;
+}
+
+.other__content__information__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.other__content__information__button-outline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 32px;
+  border: 1px solid #7772f1;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #7772f1;
+  font-weight: 700;
+}
+
+.studies__view__button {
+  padding: 13px 20px;
+  background: #7772f1;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  border: none;
+}
+
+.other__content__image-wrapper {
+  position: relative;
+  display: inline-block;
+  background-image: url('/src/static/dydin/svg/bg-shape.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 40px;
+  padding-bottom: 83px;
+}

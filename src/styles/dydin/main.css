@@ -1,0 +1,49 @@
+@import '../normalize.css';
+@import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap';
+@import 'blocks/header/header.css';
+@import 'blocks/nav/nav.css';
+@import 'blocks/hero/hero.css';
+@import 'blocks/analyse/analyse.css';
+@import 'layout/container.css';
+@import 'blocks/cooperation/cooperation.css';
+@import 'blocks/successful/successful.css';
+@import 'blocks/contact/contact.css';
+@import 'blocks/information/information.css';
+@import 'blocks/studies/studies.css';
+@import 'blocks/graph/graph.css';
+@import 'blocks/other/other.css';
+@import 'blocks/footer/footer.css';
+@import 'blocks/seoservice/seoservice.css';
+@import 'blocks/pricing/pricing.css';
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.button {
+  background: #7772f1;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.input {
+  background-color: #ffffff1f;
+  border: 1px solid rgb(255 255 255 / 20%);
+  color: white;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+}
