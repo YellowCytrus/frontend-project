@@ -1,16 +1,18 @@
 .top-bar {
   background-color: var(--color-orange);
   color: var(--color-white);
-  font-size: 12px;
+  font-family: Agenda, sans-serif;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 16px;
-  height: 32px;
+  padding: 15px 122px 15px 120px;
+  height: 50px;
 }
 
 .top-bar__left {
   flex: 1;
+  margin-right: 50%; /* 957px при ширине экрана 1920px */
 }
 
 .top-bar__right {
@@ -19,9 +21,29 @@
   gap: 16px;
 }
 
-.currency-selector {
+.top-bar__right__sep {
+  width: 1px;
+  height: 27px;
+  background-color: var(--color-white);
+  opacity: 0.3;
+}
+
+.currency-selector__button {
+  border-style: hidden;
+  background: none;
+  color: var(--color-white);
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   cursor: pointer;
+}
+
+.currency-flag {
+  width: 16px;
+  height: 16px;
+}
+
+.currency-arrow {
+  width: 8px;
+  height: 4px;
 }

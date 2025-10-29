@@ -1,0 +1,108 @@
+.reviews {
+  background-color: var(--color-dark-peach);
+  position: relative;
+  height: 885px;
+  font-family: Agenda, sans-serif;
+  margin-top: 111px;
+}
+
+.reviews__top-slidershow {
+  transform: rotate(180deg);
+  height: 129px;
+  z-index: 1;
+}
+
+.reviews__bottom-slidershow {
+  height: 129px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.reviews__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.reviews__wrap__list__stars {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.reviews__wrap__list__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.reviews__wrap__list__buttons__left {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-image: url('../../../static/budanov/svg/arrow_button_left.svg');
+}
+
+.reviews__wrap__list__buttons__right {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-image: url('../../../static/budanov/svg/arrow_button_right.svg');
+}
+
+.reviews__wrap__list {
+  flex: 1;
+  max-width: 500px;
+  padding: 80px 0;
+  margin-right: 60px;
+}
+
+.reviews__wrap__pic {
+  width: 534px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.reviews__wrap__list__header {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--color-black);
+  margin-bottom: 46px;
+  letter-spacing: 4px;
+}
+
+.reviews__wrap__list__title {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-orange);
+  letter-spacing: 4px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+.reviews__wrap__list__content {
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1.6;
+  color: var(--color-light-black);
+  margin-bottom: 23px;
+}
+
+.reviews__wrap__list__author {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--color-orange);
+  margin-bottom: 32px;
+  font-weight: bold;
+}

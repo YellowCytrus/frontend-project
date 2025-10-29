@@ -24,26 +24,13 @@
       </div>
       <div class="top-bar__right">
         <span><a href="">Sign In</a>/<a href="">Register</a></span>
+        <div class="top-bar__right__sep"></div>
         <div class="currency-selector">
           <button class="currency-selector__button" onclick="toggleCurrencyDropdown()">
-            <span class="currency-flag">🇺🇸</span>
+            <img src="src/static/budanov/svg/usd.svg" alt="USD" class="currency-flag" />
             <span class="currency-code">USD</span>
-            <span class="currency-arrow">▼</span>
+            <img src="src/static/budanov/svg/selector_arrow.svg" alt="Arrow" class="currency-arrow" />
           </button>
-          <div class="currency-dropdown" id="currencyDropdown">
-            <div class="currency-option" onclick="selectCurrency('🇺🇸', 'USD')">
-              <span class="currency-flag">🇺🇸</span>
-              <span class="currency-code">USD</span>
-            </div>
-            <div class="currency-option" onclick="selectCurrency('🇷🇺', 'RUB')">
-              <span class="currency-flag">🇷🇺</span>
-              <span class="currency-code">RUB</span>
-            </div>
-            <div class="currency-option" onclick="selectCurrency('🇰🇿', 'KZT')">
-              <span class="currency-flag">🇰🇿</span>
-              <span class="currency-code">KZT</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -77,9 +64,11 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <button class="header__search">🔍</button>
+          <button class="header__search">
+            <img src="src/static/budanov/svg/search.svg" alt="Search" />
+          </button>
           <button class="header__cart">
-            🛒
+            <img src="src/static/budanov/svg/trash.png" alt="Cart" />
             <span class="cart-count">0</span>
           </button>
         </div>
@@ -99,9 +88,9 @@
             </p>
             <button class="hero__button">SHOP NOW</button>
           </div>
-        </div>
-        <div class="hero__tear">
-          <img src="src/static/budanov/pictures/visuals/picture-152.png" alt="Torn paper effect" />
+          <div class="hero__tear">
+            <img src="src/static/budanov/pictures/visuals/picture-152.png" alt="Torn paper effect" />
+          </div>
         </div>
       </section>
 
@@ -176,18 +165,20 @@
         </div>
       </section>
 
+      <!-- Take control -->
       <section class="take-control">
-        <div class="take-control__rectangle"></div>
-        <div class="take-control__info">
-          <h2 class="take-control__info__title">TAKE CONTROL OF YOUR HEALTH</h2>
-          <p class="take-control__info__paragraph">
-            The Good4Me range has been formulated based on scientific & traditional evidence.
-          </p>
-          <p class="take-control__info__paragraph">
-            Our vitamins are here and ready to boost your mood, immunity and overall well-being!
-          </p>
-          <p class="take-control__info__paragraph">Made in New Zealand from local and imported ingredients.</p>
-          <button class="take-control__info__button">BROWSE OUR RANGE</button>
+        <div class="take-control__rectangle">
+          <div class="take-control__info">
+            <h2 class="take-control__info__title">TAKE CONTROL OF YOUR HEALTH</h2>
+            <p class="take-control__info__paragraph">
+              The Good4Me range has been formulated based on scientific & traditional evidence.
+            </p>
+            <p class="take-control__info__paragraph">
+              Our vitamins are here and ready to boost your mood, immunity and overall well-being!
+            </p>
+            <p class="take-control__info__paragraph">Made in New Zealand from local and imported ingredients.</p>
+            <button class="take-control__info__button">BROWSE OUR RANGE</button>
+          </div>
         </div>
         <div class="take-control__images">
           <img class="take-control__images_1" src="src/static/budanov/pictures/picture-48.png" alt="Oops" />
@@ -196,147 +187,305 @@
         </div>
       </section>
 
+      <!-- Our products are -->
+      <section class="our-products">
+        <h1 class="our-products__title">OUR PRODUCTS ARE</h1>
+        <div class="our-products__list">
+          <div class="our-products__list__item">
+            <div class="our-products__list__item__image-wrapper">
+              <img
+                class="our-products__list__item__image"
+                src="src/static/budanov/pictures/picture-38.png"
+                alt="Oops"
+              />
+            </div>
+            <h3 class="our-products__list__item__title">MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <p class="our-products__list__item__price">
+              <span class="our-products__list__item__actual-price">$39.95 NZD</span
+              ><span class="our-products__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="our-products__list__item">
+            <div class="our-products__list__item__image-wrapper">
+              <img
+                class="our-products__list__item__image"
+                src="src/static/budanov/pictures/picture-154.png"
+                alt="Oops"
+              />
+              <p class="our-products__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="our-products__list__item__title">VITAMIN C: IMMUNITY SUPPORT</h3>
+            <p class="our-products__list__item__price">
+              <span class="our-products__list__item__actual-price">$39.95 NZD</span
+              ><span class="our-products__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="our-products__list__item">
+            <div class="our-products__list__item__image-wrapper">
+              <img
+                class="our-products__list__item__image"
+                src="src/static/budanov/pictures/picture-147.png"
+                alt="Oops"
+              />
+              <p class="our-products__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="our-products__list__item__title">MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <p class="our-products__list__item__price">
+              <span class="our-products__list__item__actual-price">$39.95 NZD</span
+              ><span class="our-products__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="our-products__list__item">
+            <div class="our-products__list__item__image-wrapper">
+              <img
+                class="our-products__list__item__image"
+                src="src/static/budanov/pictures/picture-159.png"
+                alt="Oops"
+              />
+              <p class="our-products__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="our-products__list__item__title">APPLE CIDER VINEGAR (3 MONTH SUPPLY)</h3>
+            <p class="our-products__list__item__price">
+              <span class="our-products__list__item__actual-price">$94.95 NZD</span
+              ><span class="our-products__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+        </div>
+        <button class="our-products__button">VIEW ALL PRODUCTS</button>
+      </section>
+
       <!-- Reviews section -->
       <section class="reviews">
-        <h2 class="reviews__title">REAL REVIEWS</h2>
-        <div class="reviews__item">
-          <h3 class="reviews__subtitle">REAL RESULTS</h3>
-          <p class="reviews__text">
-            "We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our
-            website. We can't wait until you are a part of our Good4Me Family."
-          </p>
-          <p class="reviews__author">- Chloe H.</p>
-          <div class="reviews__carousel">
-            <button class="reviews__carousel-button reviews__carousel-button--prev">◄</button>
-            <button class="reviews__carousel-button reviews__carousel-button--next">►</button>
+        <img class="reviews__top-slidershow" src="src/static/budanov/pictures/visuals/picture-146.png" alt="" />
+        <div class="reviews__wrap">
+          <div class="reviews__wrap__list">
+            <h3 class="reviews__wrap__list__header">REAL REVIEWS</h3>
+            <h1 class="reviews__wrap__list__title">REAL RESULTS</h1>
+            <div class="reviews__wrap__list__stars">
+              <img class="reviews__wrap__list__stars__item" src="src/static/budanov/svg/star.svg" alt="1" />
+              <img class="reviews__wrap__list__stars__item" src="src/static/budanov/svg/star.svg" alt="2" />
+              <img class="reviews__wrap__list__stars__item" src="src/static/budanov/svg/star.svg" alt="3" />
+              <img class="reviews__wrap__list__stars__item" src="src/static/budanov/svg/star.svg" alt="4" />
+              <img class="reviews__wrap__list__stars__item" src="src/static/budanov/svg/star-gray.svg" alt="5" />
+            </div>
+            <p class="reviews__wrap__list__content">
+              “We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our
+              website.We can't wait until you are a part of our Good4Me Family.”
+            </p>
+            <p class="reviews__wrap__list__author">_Chloe H.</p>
+            <div class="reviews__wrap__list__buttons">
+              <button class="reviews__wrap__list__buttons__left"></button>
+              <button class="reviews__wrap__list__buttons__right"></button>
+            </div>
+          </div>
+          <img class="reviews__wrap__pic" src="src/static/budanov/pictures/picture-46.png" alt="" />
+        </div>
+
+        <img class="reviews__bottom-slidershow" src="src/static/budanov/pictures/visuals/picture-152.png" alt="" />
+      </section>
+
+      <!-- Shop all -->
+      <section class="shop-all">
+        <h1 class="shop-all__title">Shop all</h1>
+        <div class="shop-all__list">
+          <div class="shop-all__list__item">
+            <div class="shop-all__list__item__image-wrapper">
+              <img class="shop-all__list__item__image" src="src/static/budanov/pictures/picture-5.png" alt="Oops" />
+              <p class="shop-all__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="shop-all__list__item__title">**PRE-ORDER** HAIR, SKIN & NAILS (5 MONTH SUPPLY)</h3>
+            <p class="shop-all__list__item__price">
+              <span class="shop-all__list__item__actual-price">$39.95 NZD</span
+              ><span class="shop-all__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="shop-all__list__item">
+            <div class="shop-all__list__item__image-wrapper">
+              <img class="shop-all__list__item__image" src="src/static/budanov/pictures/picture-105.png" alt="Oops" />
+              <p class="shop-all__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="shop-all__list__item__title">DETOX + BLOAT SUPPORT VALUE PACK</h3>
+            <p class="shop-all__list__item__price">
+              <span class="shop-all__list__item__actual-price">$39.95 NZD</span
+              ><span class="shop-all__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="shop-all__list__item">
+            <div class="shop-all__list__item__image-wrapper">
+              <img class="shop-all__list__item__image" src="src/static/budanov/pictures/picture-55.png" alt="Oops" />
+              <p class="shop-all__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="shop-all__list__item__title">PROBIOTICS: GUT HEALTH + BLOAT SUPPORT</h3>
+            <p class="shop-all__list__item__price">
+              <span class="shop-all__list__item__actual-price">$39.95 NZD</span
+              ><span class="shop-all__list__item__old-price">$199.75 NZD</span>
+            </p>
+          </div>
+
+          <div class="shop-all__list__item">
+            <div class="shop-all__list__item__image-wrapper">
+              <img class="shop-all__list__item__image" src="src/static/budanov/pictures/picture-118.png" alt="Oops" />
+              <p class="shop-all__list__item__sale">ON SALE</p>
+            </div>
+            <h3 class="shop-all__list__item__title">MAPPLE CIDER VINEGAR</h3>
+            <p class="shop-all__list__item__price">
+              <span class="shop-all__list__item__actual-price">$94.95 NZD</span
+              ><span class="shop-all__list__item__old-price">$199.75 NZD</span>
+            </p>
           </div>
         </div>
-        <div class="reviews__image">
-          <img class="reviews__image-pic" src="review-image.jpg" alt="Review Image" />
-          <p class="reviews__image-text">
-            in love with your products! The gummies have been so helpful with morning sickness & hair growth ☺️ also,
-            they taste delicious!
-          </p>
-          <p class="reviews__image-author">- Tess A.</p>
+        <button class="shop-all__button">VIEW ALL PRODUCTS</button>
+      </section>
+
+      <!-- Latest News -->
+      <section class="latest-news">
+        <h2 class="latest-news__title">LATEST NEWS</h2>
+        <div class="latest-news__grid">
+          <article class="latest-news__card">
+            <div class="latest-news__card__image-wrapper">
+              <img
+                class="latest-news__card__image"
+                src="src/static/budanov/pictures/picture-148.png"
+                alt="Latest news"
+              />
+            </div>
+            <div class="latest-news__card__content">
+              <p class="latest-news__card__date">August 26, 2020</p>
+              <h3 class="latest-news__card__title">WE DONATE ONE WEEKS SUPPLY</h3>
+              <p class="latest-news__card__description">
+                We care about New Zealand children, and we want to support our community by providing our children in
+                need with necessary vitamins to improve....
+              </p>
+              <button class="latest-news__card__button">READ MORE</button>
+            </div>
+          </article>
+
+          <article class="latest-news__card">
+            <div class="latest-news__card__image-wrapper">
+              <img
+                class="latest-news__card__image"
+                src="src/static/budanov/pictures/picture-101.png"
+                alt="Latest news"
+              />
+            </div>
+            <div class="latest-news__card__content">
+              <p class="latest-news__card__date">August 26, 2020</p>
+              <h3 class="latest-news__card__title">WE DONATE ONE WEEKS SUPPLY</h3>
+              <p class="latest-news__card__description">
+                We care about New Zealand children, and we want to support our community by providing our children in
+                need with necessary vitamins to improve....
+              </p>
+              <button class="latest-news__card__button">READ MORE</button>
+            </div>
+          </article>
+
+          <article class="latest-news__card">
+            <div class="latest-news__card__image-wrapper">
+              <img
+                class="latest-news__card__image"
+                src="src/static/budanov/pictures/picture-92.png"
+                alt="Latest news"
+              />
+            </div>
+            <div class="latest-news__card__content">
+              <p class="latest-news__card__date">August 26, 2020</p>
+              <h3 class="latest-news__card__title">WE DONATE ONE WEEKS SUPPLY</h3>
+              <p class="latest-news__card__description">
+                We care about New Zealand children, and we want to support our community by providing our children in
+                need with necessary vitamins to improve....
+              </p>
+              <button class="latest-news__card__button">READ MORE</button>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Social media section -->
-      <section class="social">
-        <h2 class="social__title">#GOOD4ME</h2>
-        <div class="social__gallery">
-          <div class="social__item"><img class="social__item-image" src="social1.jpg" alt="Social Media 1" /></div>
-          <div class="social__item"><img class="social__item-image" src="social2.jpg" alt="Social Media 2" /></div>
-          <div class="social__item"><img class="social__item-image" src="social3.jpg" alt="Social Media 3" /></div>
-          <div class="social__item"><img class="social__item-image" src="social4.jpg" alt="Social Media 4" /></div>
-          <div class="social__item"><img class="social__item-image" src="social5.jpg" alt="Social Media 5" /></div>
-        </div>
-      </section>
-
-      <!-- Take Control section -->
-
-      <!-- Latest News section -->
-      <section class="news">
-        <h2 class="news__title">LATEST NEWS</h2>
-        <div class="news__list">
-          <div class="news__item">
-            <img class="news__item-image" src="news1.jpg" alt="News 1" />
-            <p class="news__item-date">August 26, 2020</p>
-            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
-            <p class="news__item-description">
-              We care about New Zealand children, and we want to support our community by providing our children in need
-              with necessary vitamins to improve...
-            </p>
-            <button class="news__item-button">READ MORE</button>
-          </div>
-          <div class="news__item">
-            <img class="news__item-image" src="news2.jpg" alt="News 2" />
-            <p class="news__item-date">August 26, 2020</p>
-            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
-            <p class="news__item-description">
-              We care about New Zealand children, and we want to support our community by providing our children in need
-              with necessary vitamins to improve...
-            </p>
-            <button class="news__item-button">READ MORE</button>
-          </div>
-          <div class="news__item">
-            <img class="news__item-image" src="news3.jpg" alt="News 3" />
-            <p class="news__item-date">August 24, 2020</p>
-            <p class="news__item-text">WE DONATE ONE WEEKS SUPPLY</p>
-            <p class="news__item-description">
-              We care about New Zealand children, and we want to support our community by providing our children in need
-              with necessary vitamins to improve...
-            </p>
-            <button class="news__item-button">READ MORE</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Features section -->
-      <section class="features">
-        <div class="features__item">
-          <img class="features__item-icon" src="shipping-icon.svg" alt="Worldwide Shipping" />
-          <h3 class="features__item-title">WORLDWIDE SHIPPING</h3>
-          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
-        </div>
-        <div class="features__item">
-          <img class="features__item-icon" src="guarantee-icon.svg" alt="30 Days Guarantee" />
-          <h3 class="features__item-title">30 DAYS GUARANTEE</h3>
-          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
-        </div>
-        <div class="features__item">
-          <img class="features__item-icon" src="payment-icon.svg" alt="Secured Payments" />
-          <h3 class="features__item-title">SECURED PAYMENTS</h3>
-          <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean...</p>
+      <!-- Trends -->
+      <section class="trends">
+        <h1 class="trends__title">#GOOD4ME</h1>
+        <div class="trends__images">
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-61.png" alt="Oops" />
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-26.png" alt="Oops" />
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-14.png" alt="Oops" />
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-113.png" alt="Oops" />
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-39.png" alt="Oops" />
+          <img class="trends__images__image" src="src/static/budanov/pictures/picture-95.png" alt="Oops" />
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
+      <img class="footer__slidershow" src="src/static/budanov/pictures/visuals/picture-146.png" alt="" />
       <div class="footer__columns">
-        <div class="footer__column">
-          <h3 class="footer__column-title">GOOD4ME.</h3>
-          <p class="footer__column-text">
+        <div class="footer__columns__brand">
+          <img
+            class="footer__columns__brand__logo"
+            src="src/static/budanov/pictures/texts/GOOD4ME_logo.png"
+            alt="GOOD4ME."
+          />
+          <p class="footer__columns__brand__description">
             Good health is important, so all of our products have been carefully designed to bring out the best in you.
           </p>
         </div>
-        <div class="footer__column">
-          <h3 class="footer__column-title">Keep In Touch</h3>
-          <p class="footer__column-text">
+
+        <div class="footer__columns__subscribe">
+          <h2 class="footer__columns__subscribe__title">Keep In Touch</h2>
+          <p class="footer__columns__subscribe__description">
             Subscribe to receive new product updates, be the first to know about sales, and more.
           </p>
-          <input class="footer__input" type="email" placeholder="Enter your email address" />
-          <button class="footer__button">SUBSCRIBE</button>
+          <form class="footer__columns__subscribe__form" action="">
+            <input
+              placeholder="Enter your email address"
+              type="email"
+              class="footer__columns__subscribe__form__email"
+            />
+            <button class="footer__columns__subscribe__form__submit-button">Subscribe</button>
+          </form>
         </div>
-        <div class="footer__column">
-          <h3 class="footer__column-title">More Info</h3>
-          <ul class="footer__column-list">
-            <li class="footer__column-item">Shipping & Delivery</li>
-            <li class="footer__column-item">Refund Policy</li>
-            <li class="footer__column-item">Partner Program</li>
-            <li class="footer__column-item">Wholesale Portal</li>
-            <li class="footer__column-item">You Buy, We Donate</li>
-            <li class="footer__column-item">Privacy Policy</li>
-            <li class="footer__column-item">Terms & Conditions</li>
+
+        <div class="footer__columns__more-info">
+          <h2 class="footer__columns__more-info__title">MORE INFO</h2>
+          <ul class="footer__columns__more-info__list">
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Shipping & Delivery</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Refund Policy</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Partner Program</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Wholesale Portal</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">You Buy, We Donate</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Privacy Policy</a>
+            </li>
+            <li class="footer__columns__more-info__item">
+              <a href="#" class="footer__columns__more-info__link">Terms & Conditions</a>
+            </li>
           </ul>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <div class="footer__social">
-          <a href="#" class="footer__social-link">🐦</a>
-          <a href="#" class="footer__social-link">📘</a>
-          <a href="#" class="footer__social-link">🐷</a>
-          <a href="#" class="footer__social-link">🎥</a>
+        <div class="footer__columns__brand__social">
+          <img src="src/static/budanov/svg/messagers.svg" alt="Social media icons" />
         </div>
-        <p class="footer__copyright">© 2021, GOOD4ME. Powered by Shopify</p>
-        <div class="footer__payments">
-          <img class="footer__payment-icon" src="visa.svg" alt="Visa" />
-          <img class="footer__payment-icon" src="mastercard.svg" alt="Mastercard" />
-          <img class="footer__payment-icon" src="amex.svg" alt="Amex" />
-          <img class="footer__payment-icon" src="paypal.svg" alt="PayPal" />
-          <img class="footer__payment-icon" src="applepay.svg" alt="Apple Pay" />
-          <img class="footer__payment-icon" src="googlepay.svg" alt="Google Pay" />
+        <div class="footer__bottom__copyright">
+          © 2021, <a href="" class="footer__bottom__copyright__link">GOOD4ME</a>. Powered by Shopify
+        </div>
+        <div class="footer__bottom__payments">
+          <img src="src/static/budanov/svg/payments.svg" alt="Payment methods" />
         </div>
       </div>
     </footer>
