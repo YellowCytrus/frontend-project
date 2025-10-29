@@ -17,15 +17,12 @@
   width: 210px;
   background-color: #7772f1;
   border-radius: 40px;
-  padding-left: 74px;
-  padding-right: 74px;
+  padding: 10px 74px;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: white;
   height: 46px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: none;
 }
 
@@ -35,14 +32,11 @@
   left: -50px;
   height: 46px;
   border-radius: 40px;
-  padding-left: 74px;
-  padding-right: 54px;
+  padding: 10px 54px 10px 74px;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: #7772f1;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: 1px solid #7772f1;
 }
 
@@ -66,52 +60,42 @@
 .pricint__content__list {
   display: flex;
   flex-direction: column;
+  padding: 24px 25% 32px;
 }
 
 .pricint__content__card {
   height: 536px;
   text-align: start;
   flex: 1;
-
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid rgba(119, 114, 241, 0.4);
-
+  background: #fff;
+  border: 1px solid rgb(119 114 241 / 40%);
   box-shadow:
-    0px 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
   border-radius: 4px;
 }
+
 .pricint__content__card-black {
   height: 536px;
   text-align: start;
   flex: 1;
   box-sizing: border-box;
-
   background: #1e212c;
   border: 1px solid #03cea4;
   box-shadow:
-    0px 60px 80px -20px rgba(30, 33, 44, 0.16),
-    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
-    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
-    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    0 60px 80px -20px rgb(30 33 44 / 16%),
+    0 26px 24px -10px rgb(30 33 44 / 10%),
+    0 12px 10px -6px rgb(30 33 44 / 8%),
+    0 4px 4px -4px rgb(30 33 44 / 5%);
   border-radius: 4px;
-}
-
-.pricint__content__list {
-  padding-top: 24px;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-bottom: 32px;
+  padding-top: 40px;
 }
 
 .pricint__content__list-black {
-  padding-top: 24px;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-bottom: 32px;
+  padding: 24px 25% 32px;
 }
 
 .pricint__content__item {
@@ -165,6 +149,7 @@
   font-weight: 400;
   content: url('/src/static/dydin/svg/cross.svg');
 }
+
 .pricint__content__item-black-off {
   padding-top: 8px;
   font-size: 16px;
@@ -207,16 +192,6 @@
   vertical-align: text-top;
 }
 
-.pricint__content__card-black {
-  padding-top: 40px;
-  color: white;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 150%;
-  text-align: center;
-  padding-bottom: 8px;
-}
-
 .pricint__content__price-black {
   font-size: 46px;
   font-weight: 900;
@@ -252,7 +227,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 32px;
+  padding: 0 32px;
   background: #7772f1;
   border-radius: 4px;
   border: 1px solid #7772f1;

@@ -14,14 +14,13 @@
 
 .studies__content__card {
   box-sizing: border-box;
-
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e8ed;
   box-shadow:
-    0px 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
   border-radius: 4px;
   padding: 40px;
   flex: 1;
@@ -37,7 +36,7 @@
 
 .studies__content__card-image {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/static/dydin/pictures/background-card.png');
+    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('/src/static/dydin/pictures/background-card.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
@@ -78,7 +77,6 @@
   font-weight: 400;
   line-height: 160%;
   font-size: 16px;
-  color: #787a80;
   padding-top: 20px;
   padding-bottom: 70px;
   color: white;

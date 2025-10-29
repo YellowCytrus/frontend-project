@@ -1,9 +1,11 @@
 .graph {
 }
+
 .graph__content {
   display: flex;
   gap: 32px;
 }
+
 .graph__content__title {
   font-weight: 700;
   line-height: 150%;

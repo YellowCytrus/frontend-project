@@ -29,7 +29,7 @@
 
 .hero__content__description {
   color: white;
-  opacity: 60%;
+  opacity: 0.6;
   line-height: 150%;
   font-size: 20px;
   text-align: center;

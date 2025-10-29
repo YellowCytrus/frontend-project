@@ -1,25 +1,25 @@
-@import url('../normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@import url('blocks/header/header.css');
-@import url('blocks/nav/nav.css');
-@import url('blocks/hero/hero.css');
-@import url('blocks/analyse/analyse.css');
-@import url('layout/container.css');
-@import url('blocks/cooperation/cooperation.css');
-@import url('blocks/successful/successful.css');
-@import url('blocks/contact/contact.css');
-@import url('blocks/information/information.css');
-@import url('blocks/studies/studies.css');
-@import url('blocks/graph/graph.css');
-@import url('blocks/other/other.css');
-@import url('blocks/footer/footer.css');
-@import url('blocks/seoservice/seoservice.css');
-@import url('blocks/pricing/pricing.css');
+@import '../normalize.css';
+@import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap';
+@import 'blocks/header/header.css';
+@import 'blocks/nav/nav.css';
+@import 'blocks/hero/hero.css';
+@import 'blocks/analyse/analyse.css';
+@import 'layout/container.css';
+@import 'blocks/cooperation/cooperation.css';
+@import 'blocks/successful/successful.css';
+@import 'blocks/contact/contact.css';
+@import 'blocks/information/information.css';
+@import 'blocks/studies/studies.css';
+@import 'blocks/graph/graph.css';
+@import 'blocks/other/other.css';
+@import 'blocks/footer/footer.css';
+@import 'blocks/seoservice/seoservice.css';
+@import 'blocks/pricing/pricing.css';
 
 body {
-  font-family: 'Lato';
+  font-family: Lato, sans-serif;
 }
+
 .button {
   background: #7772f1;
   font-weight: 700;
@@ -27,9 +27,10 @@ body {
   border-radius: 4px;
   border: none;
 }
+
 .input {
   background-color: #ffffff1f;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255 255 255 / 20%);
   color: white;
   font-size: 16px;
   line-height: 160%;
@@ -40,6 +41,7 @@ body {
   outline: none;
   box-shadow: none;
 }
+
 .input::placeholder {
   font-size: 16px;
   line-height: 160%;

@@ -22,16 +22,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 10px 32px;
   border: 1px solid #7772f1;
   border-radius: 4px;
   font-size: 16px;
   line-height: 160%;
   color: #7772f1;
-  padding-top: 10px;
   font-weight: 700;
-  padding-bottom: 10px;
   flex: 1;
 }
 
@@ -39,15 +36,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 10px 32px;
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: #9a9ca5;
-  padding-top: 10px;
-  padding-bottom: 10px;
   flex: 1;
 }
 
@@ -78,20 +72,18 @@
   display: flex;
   gap: 24px;
 }
+
 .other__content__information__button-outline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 10px 32px;
   border: 1px solid #7772f1;
   border-radius: 4px;
   font-size: 16px;
   line-height: 160%;
   color: #7772f1;
-  padding-top: 10px;
   font-weight: 700;
-  padding-bottom: 10px;
 }
 
 .studies__view__button {
