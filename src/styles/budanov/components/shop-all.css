@@ -1,0 +1,112 @@
+.shop-all {
+  margin-top: 82px;
+  font-family: Agenda, sans-serif;
+}
+
+.shop-all__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 550;
+  color: var(--color-black);
+  margin-bottom: 51px;
+}
+
+.shop-all__list {
+  justify-content: center;
+  display: flex;
+  height: 499px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.shop-all__list__item {
+  display: flex;
+  width: 397px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-all__list__item__image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 397px;
+  height: 410px;
+  background-color: var(--color-light-gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-all__list__item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.shop-all__list__item__image-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.shop-all__list__item__sale {
+  background-color: var(--color-orange);
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  color: var(--color-white);
+  padding: 5px 9px;
+  font-weight: 500;
+  font-size: 10px;
+  z-index: 10;
+}
+
+.shop-all__list__item__title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 22px;
+  margin-bottom: 7px;
+}
+
+.shop-all__list__item__price {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-all__list__item__actual-price {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-orange);
+}
+
+.shop-all__list__item__old-price {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-gray);
+  text-decoration: line-through;
+}
+
+.shop-all__button {
+  width: 254px;
+  height: 56px;
+  background-color: transparent;
+  color: var(--color-black);
+  padding: 16px 47px;
+  border: 2px solid var(--color-orange);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shop-all__button:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}

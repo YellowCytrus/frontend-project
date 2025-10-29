@@ -1,0 +1,51 @@
+.trends {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 119px 0;
+}
+
+.trends__title {
+  margin-bottom: 41px;
+  align-self: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.trends__images {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  height: 318px;
+  overflow: auto hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
+/* Стилизация скроллбара для WebKit браузеров */
+.trends__images::-webkit-scrollbar {
+  height: 8px;
+}
+
+.trends__images::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.trends__images::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.trends__images::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.trends__images__image {
+  height: 100%;
+  min-width: 318px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
