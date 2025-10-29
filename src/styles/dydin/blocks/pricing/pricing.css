@@ -176,6 +176,16 @@
   padding-bottom: 8px;
 }
 
+.pricint__content__title-black {
+  padding-top: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
 .pricint__content__price {
   font-size: 46px;
   font-weight: 900;
