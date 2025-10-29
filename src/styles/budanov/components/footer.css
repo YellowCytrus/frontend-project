@@ -1,6 +1,8 @@
 .footer {
   background-color: var(--color-peach);
-  padding: 0 0 60px;
+  font-family: Jost, sans-serif;
+  margin-top: 162px;
+  line-height: 26px;
 }
 
 .footer__slidershow {
@@ -15,59 +17,75 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 62px;
-  gap: 60px;
+  margin-left: 121px;
+  margin-right: 162px;
+  margin-top: 64px;
+}
+
+/* Brand */
+.footer__columns__brand {
+  text-align: center;
+  width: 326px;
+  margin-right: 228px;
+}
+
+.footer__columns__brand__logo {
+  align-self: center;
+  margin: auto;
+  width: 138px;
+  height: 33px;
+  margin-bottom: 10px;
+}
+
+.footer__columns__brand__description {
+  font-size: 16px;
+  color: var(--color-black);
+  line-height: 26px;
 }
 
 /* Subscribe */
 .footer__columns__subscribe {
-  flex: 1;
-  max-width: 400px;
+  text-align: center;
+  width: 571px;
+  margin-right: 374px;
 }
 
 .footer__columns__subscribe__title {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0 0 16px;
+  font-size: 26px;
+  font-weight: 550;
   color: var(--color-black);
+  line-height: 26px;
+  font-family: Jost, sans-serif;
+  margin-bottom: 11px;
 }
 
 .footer__columns__subscribe__description {
-  font-size: 14px;
-  color: var(--color-light-black);
-  line-height: 1.5;
-  margin: 0 0 32px;
+  font-size: 16px;
+  color: var(--color-black);
+  line-height: 26px;
+  font-family: Jost, sans-serif;
+  margin-bottom: 32px;
 }
 
-/* Form Styles */
 .footer__columns__subscribe__form {
-  position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
   padding-bottom: 0;
   transition: border-color 0.3s ease;
-}
-
-.footer__columns__subscribe__form:focus-within {
-  border-bottom-color: var(--color-orange);
 }
 
 .footer__columns__subscribe__form__email {
   flex: 1;
   border: none;
+  line-height: 26px;
   background: transparent;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-black);
   outline: none;
-  padding: 8px 0;
-  transition: all 0.3s ease;
-}
-
-.footer__columns__subscribe__form__email:focus {
-  outline: none;
+  padding-bottom: 18px;
+  font-family: Jost, sans-serif;
+  text-align: left;
 }
 
 .footer__columns__subscribe__form__email::placeholder {
@@ -78,51 +96,34 @@
   background: none;
   border: none;
   color: var(--color-orange);
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.5px;
+  font-weight: 550;
+  font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 8px 0;
+  padding-bottom: 13px;
   margin-left: 16px;
   transition: color 0.3s ease;
 }
 
 .footer__columns__subscribe__form__submit-button:hover {
   color: var(--color-light-black);
+  border-bottom-color: var(--color-light-black);
 }
 
-/* Brand */
-.footer__columns__brand {
-  flex: 1;
-  max-width: 400px;
-  margin-left: 6vw;
-}
-
-.footer__columns__brand__logo {
-  max-height: 40px;
-  margin-bottom: 20px;
-}
-
-.footer__columns__brand__description {
-  font-size: 14px;
-  color: var(--color-light-black);
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* More info */
+/* More Info */
 .footer__columns__more-info {
-  flex: 1;
-  min-width: 220px;
+  width: 150px;
+  height: 231px;
 }
 
 .footer__columns__more-info__title {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
+  font-size: 26px;
+  font-weight: 550;
   color: var(--color-black);
-  margin: 0 0 18px;
+  line-height: 26px;
+  font-family: Jost, sans-serif;
+  margin-bottom: 11px;
+  text-align: center;
 }
 
 .footer__columns__more-info__list {
@@ -131,16 +132,55 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  color: var(--color-light-gray);
 }
 
 .footer__columns__more-info__link {
   text-decoration: none;
-  color: var(--color-light-black);
-  font-size: 14px;
-  transition: color 0.2s ease;
+  color: var(--color-light-gray);
+  line-height: 33px;
+  font-size: 16px;
 }
 
 .footer__columns__more-info__link:hover {
+  color: var(--color-orange);
+}
+
+/* Bottom-bar */
+.footer__bottom {
+  border-top: 1px solid var(--color-light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1678px;
+  margin: 133px auto 0;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.footer__bottom__copyright {
+  font-size: 16px;
+  line-height: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--color-black);
+}
+
+.footer__bottom__payments {
+  display: flex;
+}
+
+.footer__bottom__payments img {
+  height: 24px;
+  width: auto;
+}
+
+.footer__bottom__copyright__link {
+  color: var(--color-orange);
+}
+
+.footer__bottom__copyright__link:hover {
+  color: var(--color-light-black);
 }
