@@ -1,26 +1,28 @@
 .our-products {
-  padding: 135px 5% 80px;
-  background-color: var(--color-white);
+  margin-top: 136px;
+  font-family: Agenda, sans-serif;
 }
 
 .our-products__title {
   text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 550;
   color: var(--color-black);
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+  margin-bottom: 58px;
 }
 
 .our-products__list {
-  display: flex;
   justify-content: center;
+  display: flex;
+  height: 479px;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .our-products__list__item {
   display: flex;
+  width: 397px;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -30,7 +32,7 @@
   position: relative;
   display: inline-block;
   width: 397px;
-  height: 397px;
+  height: 410px;
   background-color: var(--color-light-gray);
   transition: all 0.3s ease-in-out;
 }
@@ -54,14 +56,14 @@
   right: 11px;
   color: var(--color-white);
   padding: 5px 9px;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 10px;
   z-index: 10;
 }
 
 .our-products__list__item__title {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 22px;
   margin-bottom: 7px;
 }
@@ -75,13 +77,13 @@
 }
 
 .our-products__list__item__actual-price {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: var(--color-orange);
 }
 
 .our-products__list__item__old-price {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: var(--color-gray);
   text-decoration: line-through;
