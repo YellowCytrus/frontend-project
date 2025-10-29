@@ -1,18 +1,17 @@
 .deal {
-  background-color: var(--color-white);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center top;
   position: relative;
-  top: 0;
-  left: 0;
+  margin-top: 83px;
+  height: 136px;
   text-align: center;
-  overflow: hidden;
 }
 
 .deal__title {
+  font-family: Agenda, sans-serif;
+  font-size: 36px;
+  font-weight: 550;
+  line-height: 32px;
   color: var(--color-black);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .deal__line {
@@ -23,7 +22,10 @@
 }
 
 .deal__description {
+  font-family: Agenda, sans-serif;
+  font-size: 18px;
+  height: 55px;
   color: var(--color-light-black);
-  width: 50%;
+  width: 759px;
   margin: 0 auto;
 }
