@@ -18,49 +18,49 @@
   background: linear-gradient(to right, #dadbdd00 0%, #dadbdd 50%, #dadbdd00 100%);
 }
 
-.seoservice__content__item-1 {
+.seoservice__content-item-1 {
   background: white;
   padding-right: 94px;
   padding-bottom: 40px;
 }
 
-.seoservice__content__item-2 {
+.seoservice__content-item-2 {
   background: white;
   padding-right: 94px;
   padding-bottom: 40px;
   padding-left: 94px;
 }
 
-.seoservice__content__item-3 {
+.seoservice__content-item-3 {
   background: white;
   padding-bottom: 40px;
   padding-left: 94px;
 }
 
-.seoservice__content__item-4 {
+.seoservice__content-item-4 {
   background: white;
   padding-right: 94px;
   padding-top: 40px;
 }
 
-.seoservice__content__item-5 {
+.seoservice__content-item-5 {
   background: white;
   padding-top: 40px;
   padding-left: 94px;
   padding-right: 94px;
 }
 
-.seoservice__content__item-6 {
+.seoservice__content-item-6 {
   background: white;
   padding-top: 40px;
   padding-left: 94px;
 }
 
-.seoservice__content__image {
+.seoservice__content-image {
   padding-bottom: 24px;
 }
 
-.seoservice__content__title {
+.seoservice__content-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;

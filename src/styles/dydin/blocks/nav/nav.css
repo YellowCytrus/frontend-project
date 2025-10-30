@@ -9,7 +9,7 @@
   justify-content: left;
 }
 
-.nav__content__list {
+.nav__content-list {
   display: flex;
   color: white;
   gap: 40px;
@@ -24,7 +24,7 @@
   padding-right: 40px;
 }
 
-.nav__content__link-chevron::after {
+.nav__content--link-chevron::after {
   content: url('/src/static/dydin/svg/chevron-down.svg');
   display: inline-block;
   padding-left: 10px;

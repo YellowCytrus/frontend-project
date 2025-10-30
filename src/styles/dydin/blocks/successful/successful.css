@@ -4,7 +4,7 @@
   padding-bottom: 180px;
 }
 
-.successful__content__title {
+.successful__content-title {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -13,18 +13,18 @@
   text-align: center;
 }
 
-.successful__content__description {
+.successful__content-description {
   font-size: 16px;
   line-height: 160%;
   color: #787a80;
   text-align: center;
 }
 
-.successful__content__image {
+.successful__content-image {
   width: 705px;
   border-radius: 4px;
 }
 
-.successful__content__text {
+.successful__content-text {
   max-width: 390px;
 }

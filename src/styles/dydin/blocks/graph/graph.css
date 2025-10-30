@@ -6,26 +6,26 @@
   gap: 32px;
 }
 
-.graph__content__title {
+.graph__content-title {
   font-weight: 700;
   line-height: 150%;
   font-size: 20px;
 }
 
-.graph__content__title-image {
+.graph__content-title-image {
   font-weight: 700;
   line-height: 150%;
   font-size: 20px;
   color: white;
 }
 
-.graph__content__description {
+.graph__content-description {
   font-weight: 400;
   line-height: 150%;
   font-size: 12px;
 }
 
-.graph__content__description-image {
+.graph__content-description-image {
   font-weight: 400;
   line-height: 150%;
   font-size: 12px;

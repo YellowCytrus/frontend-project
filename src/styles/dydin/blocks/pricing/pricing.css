@@ -13,7 +13,7 @@
   padding-bottom: 60px;
 }
 
-.pricing__tabs__button {
+.pricing__tabs-button {
   width: 210px;
   background-color: #7772f1;
   border-radius: 40px;
@@ -26,7 +26,7 @@
   border: none;
 }
 
-.pricing__tabs__button-disabled {
+.pricing__tabs-button--disabled {
   position: relative;
   width: 210px;
   left: -50px;
@@ -40,7 +40,7 @@
   border: 1px solid #7772f1;
 }
 
-.pricing__tabs__button-disabled::after {
+.pricing__tabs-button--disabled::after {
   content: '-12% Off';
   padding-left: 8px;
   font-size: 12px;
@@ -57,13 +57,16 @@
   padding-bottom: 120px;
 }
 
-.pricint__content__list {
+.pricint__content-list {
   display: flex;
   flex-direction: column;
   padding: 24px 25% 32px;
 }
 
-.pricint__content__card {
+.pricint__content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 536px;
   text-align: start;
   flex: 1;
@@ -78,7 +81,10 @@
   border-radius: 4px;
 }
 
-.pricint__content__card-black {
+.pricint__content-card--black {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 536px;
   text-align: start;
   flex: 1;
@@ -93,11 +99,11 @@
   border-radius: 4px;
 }
 
-.pricint__content__list-black {
+.pricint__content-list--black {
   padding: 24px 25% 32px;
 }
 
-.pricint__content__item {
+.pricint__content-item {
   padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
@@ -105,7 +111,7 @@
   text-wrap: nowrap;
 }
 
-.pricint__content__item-black {
+.pricint__content-item--black {
   font-weight: 400;
   padding-top: 8px;
   font-size: 16px;
@@ -114,34 +120,34 @@
   color: white;
 }
 
-.pricint__content__item::before {
+.pricint__content-item::before {
   content: url('/src/static/dydin/svg/mark.svg');
   width: 16px;
   vertical-align: middle;
   height: 16px;
 }
 
-.pricing__content__line {
+.pricing__content-line {
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, #dadbdd00 0%, #dadbdd 50%, #dadbdd00 100%);
   border-image-slice: 1;
   padding-bottom: 15px;
 }
 
-.pricint__content__item-black::before {
+.pricint__content-item--black::before {
   width: 16px;
   vertical-align: middle;
   height: 16px;
   content: url('/src/static/dydin/svg/mark-black.svg');
 }
 
-.pricint__content__item-off {
+.pricint__content-item--off {
   padding-top: 8px;
   font-size: 16px;
   line-height: 160%;
 }
 
-.pricint__content__item-off::before {
+.pricint__content-item--off::before {
   width: 16px;
   height: 16px;
   vertical-align: middle;
@@ -149,7 +155,7 @@
   content: url('/src/static/dydin/svg/cross.svg');
 }
 
-.pricint__content__item-black-off {
+.pricint__content-item--black--off {
   padding-top: 8px;
   font-size: 16px;
   line-height: 160%;
@@ -158,14 +164,14 @@
   text-align: start;
 }
 
-.pricint__content__item-black-off::before {
+.pricint__content-item--black--off::before {
   width: 16px;
   height: 16px;
   vertical-align: middle;
   content: url('/src/static/dydin/svg/cross.svg');
 }
 
-.pricint__content__title {
+.pricint__content-title {
   padding-top: 40px;
   color: #1e212c;
   font-weight: 700;
@@ -175,7 +181,7 @@
   padding-bottom: 8px;
 }
 
-.pricint__content__title-black {
+.pricint__content-title--black {
   padding-top: 40px;
   color: white;
   font-weight: 700;
@@ -185,7 +191,7 @@
   padding-bottom: 8px;
 }
 
-.pricint__content__price {
+.pricint__content-price {
   font-size: 46px;
   font-weight: 900;
   line-height: 130%;
@@ -193,7 +199,7 @@
   color: #7772f1;
 }
 
-.pricint__content__price::after {
+.pricint__content-price::after {
   content: '/mon';
   font-size: 20px;
   font-weight: 700;
@@ -201,7 +207,7 @@
   vertical-align: text-top;
 }
 
-.pricint__content__price-black {
+.pricint__content-price--black {
   font-size: 46px;
   font-weight: 900;
   line-height: 130%;
@@ -209,7 +215,7 @@
   color: #03cea4;
 }
 
-.pricint__content__price-black::after {
+.pricint__content-price--black::after {
   content: '/mon';
   font-size: 20px;
   font-weight: 700;
@@ -217,7 +223,7 @@
   vertical-align: text-top;
 }
 
-.pricint__content__button-outline {
+.pricint__content-button--outline {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,10 +235,10 @@
   letter-spacing: 0.5px;
   line-height: 44px;
   color: #7772f1;
-  justify-self: safe center;
+  align-self: center;
 }
 
-.pricint__content__button {
+.pricint__content-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,8 +248,8 @@
   border: 1px solid #7772f1;
   letter-spacing: 0.5px;
   line-height: 44px;
-  justify-self: safe center;
   color: white;
   font-weight: 400;
   font-size: 14px;
+  align-self: center;
 }

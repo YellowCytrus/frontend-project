@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.studies__content__card {
+.studies__content-card {
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #e5e8ed;
@@ -34,7 +34,7 @@
   padding-bottom: 60px;
 }
 
-.studies__content__card-image {
+.studies__content-card-image {
   background-image:
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('/src/static/dydin/pictures/background-card.png');
   background-repeat: no-repeat;
@@ -44,20 +44,20 @@
   flex: 1;
 }
 
-.studies__content__title {
+.studies__content-title {
   font-weight: 400;
   line-height: 150%;
   font-size: 14px;
 }
 
-.studies__content__line {
+.studies__content-line {
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, #dadbdd00 0%, #dadbdd 50%, #dadbdd00 100%);
   border-image-slice: 1;
   padding-top: 20px;
 }
 
-.studies__content__descreiption {
+.studies__content-descreiption {
   font-weight: 400;
   line-height: 160%;
   font-size: 16px;
@@ -66,14 +66,14 @@
   padding-bottom: 70px;
 }
 
-.studies__content__title-image {
+.studies__content-title-image {
   font-weight: 400;
   line-height: 150%;
   font-size: 14px;
   color: white;
 }
 
-.studies__content__descreiption-image {
+.studies__content-descreiption-image {
   font-weight: 400;
   line-height: 160%;
   font-size: 16px;
@@ -84,7 +84,9 @@
 
 .studies__view {
   display: flex;
-  justify-self: safe center;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   padding-bottom: 85px;
 }
 
@@ -92,10 +94,9 @@
   font-size: 28px;
   line-height: 150%;
   font-weight: 700;
-  padding-right: 40px;
 }
 
-.other__content__information__button {
+.other__content-information-button {
   padding: 13px 20px;
   background: #7772f1;
   color: white;
@@ -103,6 +104,22 @@
   border: none;
 }
 
-.other__content__information_list {
+.other__content-information-list {
   padding-bottom: 48px;
+}
+
+.studies__view__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+  background: #7772f1;
+  border-radius: 4px;
+  border: 1px solid #7772f1;
+  letter-spacing: 0.5px;
+  line-height: 44px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: center;
 }

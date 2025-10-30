@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-.analyse__content__text {
+.analyse__content-text {
   font-size: 16px;
   line-height: 160%;
   padding-bottom: 8px;
@@ -26,14 +26,14 @@
   width: 100%;
 }
 
-.analyse__content__input {
+.analyse__content-input {
   padding: 13px 16px;
   flex: 1;
   border-radius: 4px 0 0 4px;
   border: none;
 }
 
-.analyse__content__button {
+.analyse__content-button {
   padding: 13px 20px;
   background: #7772f1;
   color: white;
