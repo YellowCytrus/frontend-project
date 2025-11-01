@@ -88,12 +88,16 @@
   font-weight: 700;
 }
 
-.studies__view-button {
+.other__content-information-button {
   padding: 13px 20px;
   background: #7772f1;
   color: white;
   border-radius: 0 4px 4px 0;
   border: none;
+}
+
+.other__content-information-list {
+  padding-bottom: 48px;
 }
 
 .other__content-image--wrapper {
