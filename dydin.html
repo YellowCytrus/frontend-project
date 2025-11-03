@@ -23,7 +23,7 @@
             <img class="logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
             <ul class="nav__content-list">
               <li class="nav__content-item">
-                <a class="nav__content__link-chevron" href="#">Service</a>
+                <a class="nav__content-link--chevron" href="#">Services</a>
               </li>
               <li class="nav__content-item">
                 <a class="nav__content-link" href="#">Case Studies</a>
@@ -45,13 +45,21 @@
       <div class="hero__content">
         <ul class="hero__content-route">
           <li class="hero__content-item">
-            <a class="hero__content-link" href="#"></a>
+            <a class="hero__content-link" href="#">
+              <img class="hero__content-icon" src="/src/static/dydin/svg/house.svg" alt="Home" />
+            </a>
+          </li>
+          <li class="hero__content-separator">
+            <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
           </li>
           <li class="hero__content-item">
-            <a class="hero__content-link" href="#"></a>
+            <a class="hero__content-link" href="#">Services</a>
           </li>
-          <li>
-            <a class="hero__content-link" href="#">services</a>
+          <li class="hero__content-separator">
+            <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
+          </li>
+          <li class="hero__content-item hero__content-item--current">
+            <span class="hero__content-text">Search Engine Optimization</span>
           </li>
         </ul>
         <div class="hero__content-information">
@@ -98,7 +106,7 @@
         </div>
       </div>
       <div class="seoservice">
-        <h3 class="seoservice_title">SEO services include</h3>
+        <h3 class="seoservice__title">SEO services include</h3>
         <div class="seoservice__content">
           <div class="seoservice__content-item-1">
             <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-options.svg" />
@@ -163,13 +171,13 @@
               <input class="contact__content-input" type="text" placeholder="http://yoursite.com" />
             </div>
             <div class="contact__content-item">
-              <button class="contact__content-buttoon">Analyse your site</button>
+              <button class="contact__content-button">Analyse your site</button>
             </div>
           </form>
         </div>
       </div>
       <div class="information">
-        <h3 class="information_title">That’s how it works</h3>
+        <h3 class="information__title">That's how it works</h3>
         <div class="information__content">
           <div class="information__content-item-1">
             <h5 class="information__content-step">STEP 1</h5>
@@ -211,53 +219,53 @@
         <h3 class="pricing__text">Flexible pricing plans</h3>
         <div class="pricing__tabs">
           <button class="pricing__tabs-button">Monthly</button>
-          <button class="pricing__tabs-button--disabled">Yearly</button>
+          <button class="pricing__tabs-button pricing__tabs-button--disabled">Yearly</button>
         </div>
         <div class="pricing__content">
-          <div class="pricint__content-card">
-            <h5 class="pricint__content-title">Basic</h5>
-            <p class="pricint__content-price">$24</p>
-            <p class="pricing__content-line" />
-            <ul class="pricint__content-list">
-              <li class="pricint__content-item">Advanced Analytics</li>
-              <li class="pricint__content-item">Change Management</li>
-              <li class="pricint__content-item">Corporate Finance</li>
-              <li class="pricint__content-item">One Way Link Building</li>
-              <li class="pricint__content-item">Social Media Marketing</li>
-              <li class="pricint__con00tent-item--off">Strategy & Marketing</li>
-              <li class="pricint__content-item--off">Information Technology</li>
+          <div class="pricing__content-card">
+            <h5 class="pricing__content-title">Basic</h5>
+            <p class="pricing__content-price">$24</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Strategy & Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
             </ul>
-            <button class="pricint__content-button--outline">Choose plan</button>
+            <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
           </div>
-          <div class="pricint__content-card--black">
-            <h5 class="pricint__content-title--black">Optimal</h5>
-            <p class="pricint__content-price--black">$64</p>
-            <p class="pricing__content-line" />
-            <ul class="pricint__content-list--black">
-              <li class="pricint__content-item--black">Advanced Analytics</li>
-              <li class="pricint__content-item--black">Change Management</li>
-              <li class="pricint__content-item--black">Corporate Finance</li>
-              <li class="pricint__content-item--black">One Way Link Building</li>
-              <li class="pricint__content-item--black">Social Media Marketing</li>
-              <li class="pricint__content-item--black">Strategy & Marketing</li>
-              <li class="pricint__content-item--black--off">Information Technology</li>
+          <div class="pricing__content-card pricing__content-card--accent">
+            <h5 class="pricing__content-title">Optimal</h5>
+            <p class="pricing__content-price">$64</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item">Strategy & Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
             </ul>
-            <button class="pricint__content-button">Choose plan</button>
+            <button class="pricing__content-button">Choose plan</button>
           </div>
-          <div class="pricint__content-card">
-            <h5 class="pricint__content-title">Premium</h5>
-            <p class="pricint__content-price">$98</p>
-            <p class="pricing__content-line" />
-            <ul class="pricint__content-list">
-              <li class="pricint__content-item">Advanced Analytics</li>
-              <li class="pricint__content-item">Change Management</li>
-              <li class="pricint__content-item">Corporate Finance</li>
-              <li class="pricint__content-item">One Way Link Building</li>
-              <li class="pricint__content-item">Social Media Marketing</li>
-              <li class="pricint__content-item">Strategy & Marketing</li>
-              <li class="pricint__content-item">Information Technology</li>
+          <div class="pricing__content-card">
+            <h5 class="pricing__content-title">Premium</h5>
+            <p class="pricing__content-price">$98</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item">Strategy & Marketing</li>
+              <li class="pricing__content-item">Information Technology</li>
             </ul>
-            <button class="pricint__content-button--outline">Choose plan</button>
+            <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
           </div>
         </div>
       </div>
@@ -267,10 +275,10 @@
         <h3 class="studies__title">Related case studies</h3>
         <div class="studies__content">
           <div class="studies__content-card">
-            <img src="/src/static/dydin/pictures/national.png" alt="national" class="studies__content__image" />
+            <img src="/src/static/dydin/pictures/national.png" alt="national" class="studies__content-image" />
             <p class="studies__content-title">Charity organisation</p>
-            <p class="studies__content-line" />
-            <p class="studies__content-descreiption">
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description">
               Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.
             </p>
             <div class="graph">
@@ -295,8 +303,8 @@
               class="studies__content-image"
             />
             <p class="studies__content-title-image">Oil and natural resources</p>
-            <p class="studies__content-line" />
-            <p class="studies__content-descreiption-image">
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description-image">
               With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase
               in conversion rate.
             </p>
@@ -315,10 +323,10 @@
             </div>
           </div>
           <div class="studies__content-card">
-            <img src="/src/static/dydin/pictures/sunset.png" alt="sunset" class="studies__content__image" />
+            <img src="/src/static/dydin/pictures/sunset.png" alt="sunset" class="studies__content-image" />
             <p class="studies__content-title">Personal care</p>
-            <p class="studies__content-line" />
-            <p class="studies__content-descreiption">
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description">
               We helped Sunset company break through a noisy industry and better understand their buyer's journey.
             </p>
             <div class="graph">
@@ -337,7 +345,7 @@
             </div>
           </div>
         </div>
-        <div class="studies-view">
+        <div class="studies__view">
           <h4 class="studies__view-title">Explore more our clients' case studies</h4>
           <button class="studies__view-button">View all case studies</button>
         </div>
@@ -347,11 +355,11 @@
       <div class="other">
         <h3 class="other__title">Other services</h3>
         <div class="other__tabs">
-          <button class="other__tabs-button">Social Media</button>
-          <button class="other__tabs-button--off">SEO</button>
-          <button class="other__tabs-button--off">Research</button>
-          <button class="other__tabs-button--off">Content & PR</button>
-          <button class="other__tabs-button--off">Payed Traffic</button>
+          <button class="other__tabs-button other__tabs-button--active">Social Media</button>
+          <button class="other__tabs-button">SEO</button>
+          <button class="other__tabs-button">Research</button>
+          <button class="other__tabs-button">Content & PR</button>
+          <button class="other__tabs-button">Payed Traffic</button>
         </div>
         <div class="other__content">
           <div class="other__content-information">
@@ -365,11 +373,13 @@
               <li class="other__content-information-item">Sit semper enim senectus integer ut turpis et.</li>
             </ul>
             <div class="other__content-information-buttons">
-              <button class="other__content-information-button--outline">Learn more</button>
-              <button class="other__content__information-button button">Try SEO toolkit</button>
+              <button class="other__content-information-button other__content-information-button--outline">
+                Learn more
+              </button>
+              <button class="other__content-information-button">Try SEO toolkit</button>
             </div>
           </div>
-          <div class="other__content-image--wrapper">
+          <div class="other__content-image-wrapper">
             <img class="other__content-image" src="/src/static/dydin/pictures/illustration.png" alt="illustration" />
           </div>
         </div>
@@ -377,61 +387,52 @@
     </div>
     <footer class="footer">
       <div class="footer__content container">
-        <div class="footer__content__main">
-          <img src="src/static/dydin/svg/logo.svg" alt="logo-footer" class="footer__content__logo" />
-          <p class="footer__content__description">
+        <div class="footer__content-main">
+          <img src="src/static/dydin/svg/logo.svg" alt="logo-footer" class="footer__content-logo" />
+          <p class="footer__content-description">
             Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through
             a wealth of performance data and market research. We create science-based SEO strategies to empower our
             clients.
           </p>
-          <img src="src/static/dydin/pictures/socials.png" alt="socials" class="footer__content__socials" />
+          <img src="src/static/dydin/pictures/socials.png" alt="socials" class="footer__content-socials" />
         </div>
-        <div class="footer__content__menu">
-          <div class="footer__content__item">
-            <p class="footer__content__item__title">COMPANY</p>
-            <a class="footer__content__item__link" href="#">About Us</a>
-            <a class="footer__content__item__link" href="#">Case Studies</a>
-            <a class="footer__content__item__link" href="#">Blog</a>
-            <a class="footer__content__item__link" href="#">Careers</a>
-            <a class="footer__content__item__link" href="#">Careers</a>
-            <a class="footer__content__item__link" href="#">Contacts</a>
+        <div class="footer__content-menu">
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">SERVICES</p>
+            <a class="footer__content-item-link" href="#">Case Studies</a>
+            <a class="footer__content-item-link" href="#">SEO</a>
+            <a class="footer__content-item-link" href="#">Research</a>
+            <a class="footer__content-item-link" href="#">Social Media</a>
+            <a class="footer__content-item-link" href="#">Content & PR</a>
+            <a class="footer__content-item-link" href="#">Payed Traffic</a>
           </div>
-          <div class="footer__content__item">
-            <p class="footer__content__item__title">SERVICES</p>
-            <a class="footer__content__item__link" href="#">Social Media</a>
-            <a class="footer__content__item__link" href="#">Case Studies</a>
-            <a class="footer__content__item__link" href="#">SEO</a>
-            <a class="footer__content__item__link" href="#">Research</a>
-            <a class="footer__content__item__link" href="#">Content & PR</a>
-            <a class="footer__content__item__link" href="#">Payed Traffic</a>
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">CONTACT US</p>
+            <a class="footer__content-item-link" href="#">(405) 555-0128</a>
+            <a class="footer__content-item-link" href="#">hello@createx.com</a>
           </div>
-          <div class="footer__content__item">
-            <p class="footer__content__item__title">CONTACT US</p>
-            <a class="footer__content__item__link" href="#">(405) 555-0128</a>
-            <a class="footer__content__item__link" href="#">hello@createx.com</a>
-          </div>
-          <div class="footer__content__item">
-            <p class="footer__content__item__title">SIGN UP TO OUR NEWSLETTER</p>
-            <div class="footer__content__item__input-wrapper">
-              <input class="footer__content__item__input input" />
-              <img src="/src/static//dydin/svg/right.svg" alt="" class="footer__content__item__input-icon" />
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">SIGN UP TO OUR NEWSLETTER</p>
+            <div class="footer__content-item-input-wrapper">
+              <input class="footer__content-item-input input" />
+              <img src="/src/static//dydin/svg/right.svg" alt="" class="footer__content-item-input-icon" />
             </div>
-            <p class="footer__content__item__text">
+            <p class="footer__content-item-text">
               *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
             </p>
           </div>
         </div>
-        <div class="footer__content__reviews">
-          <img src="/src/static/dydin/pictures/review-1.png" alt="revie-1" class="footer__content__reviews__image" />
-          <img src="/src/static/dydin/pictures/review-2.png" alt="revie-2" class="footer__content__reviews__image" />
-          <img src="/src/static/dydin/pictures/review-3.png" alt="revie-3" class="footer__content__reviews__image" />
-          <img src="/src/static/dydin/pictures/review-4.png" alt="revie-4" class="footer__content__reviews__image" />
+        <div class="footer__content-reviews">
+          <img src="/src/static/dydin/pictures/review-1.png" alt="revie-1" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-2.png" alt="revie-2" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-3.png" alt="revie-3" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-4.png" alt="revie-4" class="footer__content-reviews-image" />
         </div>
       </div>
       <div class="footer__made">
-        <p class="footer_made__text container">
+        <p class="footer__made-text container">
           © All rights reserved. Made with
-          <img src="/src/static/dydin/svg/heart.svg" alt="heart" class="footer_made__icon" />
+          <img src="/src/static/dydin/svg/heart.svg" alt="heart" class="footer__made-icon" />
           by Createx Studio
         </p>
       </div>

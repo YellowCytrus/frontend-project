@@ -38,6 +38,7 @@
   line-height: 160%;
   color: #7772f1;
   border: 1px solid #7772f1;
+  background-color: transparent;
 }
 
 .pricing__tabs-button--disabled::after {
@@ -57,13 +58,13 @@
   padding-bottom: 120px;
 }
 
-.pricint__content-list {
+.pricing__content-list {
   display: flex;
   flex-direction: column;
   padding: 24px 25% 32px;
 }
 
-.pricint__content-card {
+.pricing__content-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +82,7 @@
   border-radius: 4px;
 }
 
-.pricint__content-card--black {
+.pricing__content-card--accent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,11 +100,7 @@
   border-radius: 4px;
 }
 
-.pricint__content-list--black {
-  padding: 24px 25% 32px;
-}
-
-.pricint__content-item {
+.pricing__content-item {
   padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
@@ -111,17 +108,19 @@
   text-wrap: nowrap;
 }
 
-.pricint__content-item--black {
-  font-weight: 400;
-  padding-top: 8px;
-  font-size: 16px;
-  line-height: 160%;
-  text-align: start;
+.pricing__content-item::before {
+  content: url('/src/static/dydin/svg/mark.svg');
+  width: 16px;
+  vertical-align: middle;
+  height: 16px;
+}
+
+.pricing__content-card--accent .pricing__content-item {
   color: white;
 }
 
-.pricint__content-item::before {
-  content: url('/src/static/dydin/svg/mark.svg');
+.pricing__content-card--accent .pricing__content-item::before {
+  content: url('/src/static/dydin/svg/mark-black.svg');
   width: 16px;
   vertical-align: middle;
   height: 16px;
@@ -134,20 +133,13 @@
   padding-bottom: 15px;
 }
 
-.pricint__content-item--black::before {
-  width: 16px;
-  vertical-align: middle;
-  height: 16px;
-  content: url('/src/static/dydin/svg/mark-black.svg');
-}
-
-.pricint__content-item--off {
+.pricing__content-item--disabled {
   padding-top: 8px;
   font-size: 16px;
   line-height: 160%;
 }
 
-.pricint__content-item--off::before {
+.pricing__content-item--disabled::before {
   width: 16px;
   height: 16px;
   vertical-align: middle;
@@ -155,23 +147,15 @@
   content: url('/src/static/dydin/svg/cross.svg');
 }
 
-.pricint__content-item--black--off {
-  padding-top: 8px;
-  font-size: 16px;
-  line-height: 160%;
+.pricing__content-card--accent .pricing__content-item--disabled {
   color: white;
-  font-weight: 400;
-  text-align: start;
 }
 
-.pricint__content-item--black--off::before {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
+.pricing__content-card--accent .pricing__content-item--disabled::before {
   content: url('/src/static/dydin/svg/cross.svg');
 }
 
-.pricint__content-title {
+.pricing__content-title {
   padding-top: 40px;
   color: #1e212c;
   font-weight: 700;
@@ -181,17 +165,11 @@
   padding-bottom: 8px;
 }
 
-.pricint__content-title--black {
-  padding-top: 40px;
+.pricing__content-card--accent .pricing__content-title {
   color: white;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 150%;
-  text-align: center;
-  padding-bottom: 8px;
 }
 
-.pricint__content-price {
+.pricing__content-price {
   font-size: 46px;
   font-weight: 900;
   line-height: 130%;
@@ -199,7 +177,7 @@
   color: #7772f1;
 }
 
-.pricint__content-price::after {
+.pricing__content-price::after {
   content: '/mon';
   font-size: 20px;
   font-weight: 700;
@@ -207,38 +185,11 @@
   vertical-align: text-top;
 }
 
-.pricint__content-price--black {
-  font-size: 46px;
-  font-weight: 900;
-  line-height: 130%;
-  text-align: center;
+.pricing__content-card--accent .pricing__content-price {
   color: #03cea4;
 }
 
-.pricint__content-price--black::after {
-  content: '/mon';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 150%;
-  vertical-align: text-top;
-}
-
-.pricint__content-button--outline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  border: 1px solid #7772f1;
-  border-radius: 4px;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  line-height: 44px;
-  color: #7772f1;
-  align-self: center;
-}
-
-.pricint__content-button {
+.pricing__content-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,4 +203,12 @@
   font-weight: 400;
   font-size: 14px;
   align-self: center;
+}
+
+.pricing__content-button--outline {
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid #7772f1;
+  background: transparent;
+  color: #7772f1;
 }
