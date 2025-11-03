@@ -57,7 +57,7 @@
   padding-top: 20px;
 }
 
-.studies__content-descreiption {
+.studies__content-description {
   font-weight: 400;
   line-height: 160%;
   font-size: 16px;
@@ -73,7 +73,7 @@
   color: white;
 }
 
-.studies__content-descreiption-image {
+.studies__content-description-image {
   font-weight: 400;
   line-height: 160%;
   font-size: 16px;
@@ -82,7 +82,7 @@
   color: white;
 }
 
-.studies-view {
+.studies__view {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -97,7 +97,7 @@
   font-weight: 700;
 }
 
-.studies-view .studies__view-button {
+.studies__view .studies__view-button {
   padding: 0 40px;
   background: #7772f1;
   border-radius: 4px;
