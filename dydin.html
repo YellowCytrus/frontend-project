@@ -1,485 +1,502 @@
 <!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Денис Дыдин - КИ23-14Б</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Денис Дыдин - КИ23-14Б</title>
+    <link rel="stylesheet" href="./src/styles/dydin/main.css" />
+  </head>
 
-  <link rel="stylesheet" href="./src/styles/dydin/main.css" />
-</head>
-
-<body>
-  <script type="module" src="/src/dydin.js"></script>
-  <div class="hero">
-    <header class="header container">
-      <nav class="nav">
-        <div class="nav__content">
-          <img class="nav__logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
-          <ul class="nav__content-list">
-            <li class="nav__content-item">
-              <a class="nav__content-link--chevron" href="#">Services</a>
-            </li>
-            <li class="nav__content-item">
-              <a class="nav__content-link" href="#">Case Studies</a>
-            </li>
-            <li class="nav__content-item">
-              <a class="nav__content-link" href="#">About Us</a>
-            </li>
-            <li class="nav__content-item">
-              <a class="nav__content-link" href="#">Blog</a>
-            </li>
-            <li class="nav__content-item">
-              <a class="nav__content-link" href="#">Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <button class="nav__button button">Talk to a human</button>
-        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
-        <input type="checkbox" id="nav__burger-toggle" class="nav__burger-checkbox" />
-        <label for="nav__burger-toggle" class="nav__burger" aria-label="Toggle menu">
-          <span class="nav__burger-line"></span>
-          <span class="nav__burger-line"></span>
-          <span class="nav__burger-line"></span>
-        </label>
-        <div class="nav__menu">
-          <div class="nav__menu-content">
-            <ul class="nav__menu-list">
-              <li class="nav__menu-item">
-                <a class="nav__menu-link" href="#">Services</a>
+  <body>
+    <script type="module" src="/src/dydin.js"></script>
+    <div class="hero">
+      <header class="header container">
+        <nav class="nav">
+          <div class="nav__content">
+            <img class="nav__logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
+            <ul class="nav__content-list">
+              <li class="nav__content-item">
+                <a class="nav__content-link--chevron" href="#">Services</a>
               </li>
-              <li class="nav__menu-item">
-                <a class="nav__menu-link" href="#">Case Studies</a>
+              <li class="nav__content-item">
+                <a class="nav__content-link" href="#">Case Studies</a>
               </li>
-              <li class="nav__menu-item">
-                <a class="nav__menu-link" href="#">About Us</a>
+              <li class="nav__content-item">
+                <a class="nav__content-link" href="#">About Us</a>
               </li>
-              <li class="nav__menu-item">
-                <a class="nav__menu-link" href="#">Blog</a>
+              <li class="nav__content-item">
+                <a class="nav__content-link" href="#">Blog</a>
               </li>
-              <li class="nav__menu-item">
-                <a class="nav__menu-link" href="#">Contacts</a>
+              <li class="nav__content-item">
+                <a class="nav__content-link" href="#">Contacts</a>
               </li>
             </ul>
-            <label for="nav__burger-toggle" class="nav__menu-button button">Talk to a human</label>
+          </div>
+          <button class="nav__button button">Talk to a human</button>
+          <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <input type="checkbox" id="nav__burger-toggle" class="nav__burger-checkbox" />
+          <label for="nav__burger-toggle" class="nav__burger" aria-label="Toggle menu">
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+          </label>
+          <div class="nav__menu">
+            <div class="nav__menu-content">
+              <ul class="nav__menu-list">
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Services</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Case Studies</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">About Us</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Blog</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Contacts</a>
+                </li>
+              </ul>
+              <label for="nav__burger-toggle" class="nav__menu-button button">Talk to a human</label>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="hero__content">
+        <ul class="hero__content-route">
+          <li class="hero__content-item">
+            <a class="hero__content-link" href="#">
+              <img class="hero__content-icon" src="/src/static/dydin/svg/house.svg" alt="Home" />
+            </a>
+          </li>
+          <li class="hero__content-separator">
+            <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
+          </li>
+          <li class="hero__content-item">
+            <a class="hero__content-link" href="#">Services</a>
+          </li>
+          <li class="hero__content-separator">
+            <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
+          </li>
+          <li class="hero__content-item hero__content-item--current">
+            <span class="hero__content-text">Search Engine Optimization</span>
+          </li>
+        </ul>
+        <div class="hero__content-information">
+          <h2 class="hero__content-title">Search Engine Optimization</h2>
+          <p class="hero__content-description">
+            Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi.
+            Ultrices vitae tempor amet nec euismod non.
+          </p>
+        </div>
+        <div class="analyse">
+          <div class="analyse__container">
+            <p class="analyse__content-text">Your website URL</p>
+            <div class="analyse__content">
+              <input class="analyse__content-input input" type="text" placeholder="http://yoursite.com" />
+              <button class="analyse__content-button">Analyse your site</button>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <div class="hero__content">
-      <ul class="hero__content-route">
-        <li class="hero__content-item">
-          <a class="hero__content-link" href="#">
-            <img class="hero__content-icon" src="/src/static/dydin/svg/house.svg" alt="Home" />
-          </a>
-        </li>
-        <li class="hero__content-separator">
-          <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
-        </li>
-        <li class="hero__content-item">
-          <a class="hero__content-link" href="#">Services</a>
-        </li>
-        <li class="hero__content-separator">
-          <img class="hero__content-chevron" src="/src/static/dydin/svg/chevron-right.svg" alt="" />
-        </li>
-        <li class="hero__content-item hero__content-item--current">
-          <span class="hero__content-text">Search Engine Optimization</span>
-        </li>
-      </ul>
-      <div class="hero__content-information">
-        <h2 class="hero__content-title">Search Engine Optimization</h2>
-        <p class="hero__content-description">
-          Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi.
-          Ultrices vitae tempor amet nec euismod non.
-        </p>
-      </div>
-      <div class="analyse">
-        <div class="analyse__container">
-          <p class="analyse__content-text">Your website URL</p>
-          <div class="analyse__content">
-            <input class="analyse__content-input input" type="text" placeholder="http://yoursite.com" />
-            <button class="analyse__content-button">Analyse your site</button>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="cooperation">
-      <div class="cooperation__content">
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-1.png" alt="coop1" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-2.png" alt="coop2" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-3.png" alt="coop3" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-4.png" alt="coop4" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-5.png" alt="coop5" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-6.png" alt="coop1" />
-      </div>
-    </div>
-
-    <div class="successful">
-      <div class="successful__content">
-        <img class="successful__content-image" src="src/static/dydin/pictures/graph.jpg" alt="" />
-        <div class="successful__content-text">
-          <h3 class="successful__content-title">We go above and beyond to ensure successful SEO</h3>
-          <p class="successful__content-description">
-            Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra.
-            Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget
-            orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum
-            mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna
-            ultricies orci.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="seoservice">
-      <h3 class="seoservice__title">SEO services include</h3>
-      <div class="seoservice__content">
-        <div class="seoservice__content-item-1">
-          <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-options.svg" />
-          <h5 class="seoservice__content-title">SEO Strategy</h5>
-          <p class="seoservice__content-description">
-            Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
-          </p>
-        </div>
-        <div class="seoservice__content-item-2">
-          <img class="seoservice__content-image" alt="analytics" src="/src/static/dydin/svg/ic-analytics.svg" />
-          <h5 class="seoservice__content-title">Competitor Analysis</h5>
-          <p class="seoservice__content-description">
-            Nulla id egestas accumsan consequat tincidunt. Urna nisi, nec sed massa pharetra duis ut porttitor.
-          </p>
-        </div>
-        <div class="seoservice__content-item-3">
-          <img class="seoservice__content-image" alt="target" src="/src/static/dydin/svg/ic-target.svg" />
-          <h5 class="seoservice__content-title">Technical Audit</h5>
-          <p class="seoservice__content-description">
-            Congue viverra in quis urna lectus proin massa. Aliquam, justo nisl sed diam nibh vehicula.
-          </p>
-        </div>
-        <div class="seoservice__content-item-4">
-          <img class="seoservice__content-image" alt="chart" src="/src/static/dydin/svg/ic-chart.svg" />
-          <h5 class="seoservice__content-title">Content Strategy</h5>
-          <p class="seoservice__content-description">
-            Posuere sed quam etiam semper id id euismod. Feugiat cras donec elementum interdum in.
-          </p>
-        </div>
-        <div class="seoservice__content-item-5">
-          <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-speaker.svg" />
-          <h5 class="seoservice__content-title">Media Promotion</h5>
-          <p class="seoservice__content-description">
-            Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
-            neque.
-          </p>
-        </div>
-        <div class="seoservice__content-item-6">
-          <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-analysis.svg" />
-          <h5 class="seoservice__content-title">SEO Reports</h5>
-          <p class="seoservice__content-description">
-            Congue phasellus est, amet sem bibendum sollicitudin arcu scelerisque senectus. Mauris, mus tincidunt a,
-            nisi.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <h4 class="contact__text">Get a Free SEO Analysis!</h4>
-      <div class="contact__content">
-        <form class="contact__content-form">
-          <div class="contact__content-item">
-            <p class="contact__content-text">Name</p>
-            <input class="contact__content-input" type="text" placeholder="Your name" />
-          </div>
-          <div class="contact__content-item">
-            <p class="contact__content-text">Email</p>
-            <input class="contact__content-input" type="text" placeholder="Your working email" />
-          </div>
-          <div class="contact__content-item">
-            <p class="contact__content-text">Your website URL</p>
-            <input class="contact__content-input" type="text" placeholder="http://yoursite.com" />
-          </div>
-          <div class="contact__content-item">
-            <button class="contact__content-button">Analyse your site</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="information">
-      <h3 class="information__title">That's how it works</h3>
-      <div class="information__content">
-        <div class="information__content-item-1">
-          <h5 class="information__content-step">STEP 1</h5>
-          <h6 class="information__content-title">Off-Site SEO Analysis</h6>
-          <p class="information__content-text">
-            Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
-            neque.
-          </p>
-        </div>
-        <div class="information__content-item-2">
-          <h5 class="information__content-step">STEP 2</h5>
-          <h6 class="information__content-title">Technical SEO Optimizations</h6>
-          <p class="information__content-text">
-            Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas
-            laoreet etiam. Nunc nisl orci auctor et fames. Vestibulum viverra faucibus faucibus et convallis.
-          </p>
-        </div>
-        <div class="information__content-item-3">
-          <h5 class="information__content-step">STEP 3</h5>
-          <h6 class="information__content-title">Usability Check</h6>
-          <p class="information__content-text">
-            Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas
-            facilisi lobortis. Varius praesent pretium in leo, accumsan, in ultricies.
-          </p>
-        </div>
-        <div class="information__content-item-4">
-          <h5 class="information__content-step">STEP 4</h5>
-          <h6 class="information__content-title">Content Marketing</h6>
-          <p class="information__content-text">
-            Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor. Faucibus in leo, nulla
-            odio nulla imperdiet quis faucibus neque.
-          </p>
-        </div>
-        <div class="information__content-item-5"></div>
-      </div>
-    </div>
-    <div class="pricing">
-      <h3 class="pricing__text">Flexible pricing plans</h3>
-      <div class="pricing__tabs">
-        <button class="pricing__tabs-button">Monthly</button>
-        <button class="pricing__tabs-button pricing__tabs-button--disabled">Yearly</button>
-      </div>
-      <div class="pricing__content">
-        <div class="pricing__content-card">
-          <h5 class="pricing__content-title">Basic</h5>
-          <p class="pricing__content-price">$24</p>
-          <p class="pricing__content-line"></p>
-          <ul class="pricing__content-list">
-            <li class="pricing__content-item">Advanced Analytics</li>
-            <li class="pricing__content-item">Change Management</li>
-            <li class="pricing__content-item">Corporate Finance</li>
-            <li class="pricing__content-item">One Way Link Building</li>
-            <li class="pricing__content-item">Social Media Marketing</li>
-            <li class="pricing__content-item pricing__content-item--disabled">Strategy & Marketing</li>
-            <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
-          </ul>
-          <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
-        </div>
-        <div class="pricing__content-card pricing__content-card--accent">
-          <h5 class="pricing__content-title">Optimal</h5>
-          <p class="pricing__content-price">$64</p>
-          <p class="pricing__content-line"></p>
-          <ul class="pricing__content-list">
-            <li class="pricing__content-item">Advanced Analytics</li>
-            <li class="pricing__content-item">Change Management</li>
-            <li class="pricing__content-item">Corporate Finance</li>
-            <li class="pricing__content-item">One Way Link Building</li>
-            <li class="pricing__content-item">Social Media Marketing</li>
-            <li class="pricing__content-item">Strategy & Marketing</li>
-            <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
-          </ul>
-          <button class="pricing__content-button">Choose plan</button>
-        </div>
-        <div class="pricing__content-card">
-          <h5 class="pricing__content-title">Premium</h5>
-          <p class="pricing__content-price">$98</p>
-          <p class="pricing__content-line"></p>
-          <ul class="pricing__content-list">
-            <li class="pricing__content-item">Advanced Analytics</li>
-            <li class="pricing__content-item">Change Management</li>
-            <li class="pricing__content-item">Corporate Finance</li>
-            <li class="pricing__content-item">One Way Link Building</li>
-            <li class="pricing__content-item">Social Media Marketing</li>
-            <li class="pricing__content-item">Strategy & Marketing</li>
-            <li class="pricing__content-item">Information Technology</li>
-          </ul>
-          <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="studies">
     <div class="container">
-      <h3 class="studies__title">Related case studies</h3>
-      <div class="studies__content">
-        <div class="studies__content-card">
-          <img src="/src/static/dydin/pictures/national.png" alt="national" class="studies__content-image" />
-          <p class="studies__content-title">Charity organisation</p>
-          <p class="studies__content-line"></p>
-          <p class="studies__content-description">
-            Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.
-          </p>
-          <div class="graph">
-            <div class="graph__content">
-              <div class="graph__content-statistic">
-                <img class="graph__content-statistic-image" src="src/static/dydin/svg/circle.svg" alt="circle-orange" />
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title">90%</h4>
-                  <p class="graph__content-statistic-description">Engagement</p>
-                </div>
-              </div>
-              <div class="graph__content-statistic">
-                <img class="graph__content-statistic-image" src="src/static/dydin/svg/ellipse.svg"
-                  alt="ellipse-green" />
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title">100%</h4>
-                  <p class="graph__content-statistic-description">Deliverability</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="studies__content-card studies__content-card--image">
-          <img src="/src/static/dydin/pictures/national-health.png" alt="national-health"
-            class="studies__content-image" />
-          <p class="studies__content-title-image">Oil and natural resources</p>
-          <p class="studies__content-line"></p>
-          <p class="studies__content-description-image">
-            With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase
-            in conversion rate.
-          </p>
-          <div class="graph">
-            <div class="graph__content">
-              <div class="graph__content-statistic">
-                <img class="graph__content-statistic-image" src="src/static/dydin/svg/ellipse-blue.svg"
-                  alt="ellipse-blue" />
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title graph__content-statistic-title--image">200%</h4>
-                  <p class="graph__content-statistic-description graph__content-statistic-description--image">
-                    Growth in sales
-                  </p>
-                </div>
-              </div>
-              <div class="graph__content-statistic">
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title graph__content-statistic-title--image">1,400</h4>
-                  <p class="graph__content-statistic-description graph__content-statistic-description--image">
-                    Target investors
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="studies__content-card">
-          <img src="/src/static/dydin/pictures/sunset.png" alt="sunset" class="studies__content-image" />
-          <p class="studies__content-title">Personal care</p>
-          <p class="studies__content-line"></p>
-          <p class="studies__content-description">
-            We helped Sunset company break through a noisy industry and better understand their buyer's journey.
-          </p>
-          <div class="graph">
-            <div class="graph__content">
-              <div class="graph__content-statistic">
-                <img class="graph__content-statistic-image" src="src/static/dydin/svg/ellipse-red.svg"
-                  alt="ellipse-red" />
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title">70%</h4>
-                  <p class="graph__content-statistic-description">Open Rate</p>
-                </div>
-              </div>
-              <div class="graph__content-statistic">
-                <img class="graph__content-statistic-image" src="src/static/dydin/svg/ellipse-yellow.svg"
-                  alt="ellipse-yellow" />
-                <div class="graph__content-statistic-information">
-                  <h4 class="graph__content-statistic-title">200%</h4>
-                  <p class="graph__content-statistic-description">Growth in sales</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="cooperation">
+        <div class="cooperation__content">
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-1.png" alt="coop1" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-2.png" alt="coop2" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-3.png" alt="coop3" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-4.png" alt="coop4" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-5.png" alt="coop5" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-6.png" alt="coop1" />
         </div>
       </div>
-      <div class="studies__view">
-        <h4 class="studies__view-title">Explore more our clients` case studies</h4>
-        <button class="studies__view-button">View all case studies</button>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="other">
-      <h3 class="other__title">Other services</h3>
-      <div class="other__tabs">
-        <button class="other__tabs-button other__tabs-button--active">Social Media</button>
-        <button class="other__tabs-button">SEO</button>
-        <button class="other__tabs-button">Research</button>
-        <button class="other__tabs-button">Content & PR</button>
-        <button class="other__tabs-button">Payed Traffic</button>
-      </div>
-      <div class="other__content">
-        <div class="other__content-information">
-          <h5 class="other__content-information-title">Complete Worflow For Any SEO Professional</h5>
-          <ul class="other__content-information-list">
-            <li class="other__content-information-item">Aenean enim tellus morbi nisl vulputate dictumst.</li>
-            <li class="other__content-information-item">Nibh sapien volutpat lacus augue.</li>
-            <li class="other__content-information-item">Nibh sapien volutpat lacus augue.</li>
-            <li class="other__content-information-item">Gravida ornare sit in et ut sit sem id.</li>
-            <li class="other__content-information-item">Ultrices pellentesque dictum enim egestas ac diam.</li>
-            <li class="other__content-information-item">Sit semper enim senectus integer ut turpis et.</li>
-          </ul>
-          <div class="other__content-information-buttons">
-            <button class="other__content-information-button other__content-information-button--outline">
-              Learn more
-            </button>
-            <button class="other__content-information-button">Try SEO toolkit</button>
-          </div>
-        </div>
-        <div class="other__content-image-wrapper">
-          <img class="other__content-image" src="/src/static/dydin/pictures/illustration.png" alt="illustration" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="footer__content container">
-      <div class="footer__content-main">
-        <img src="src/static/dydin/svg/logo.svg" alt="logo-footer" class="footer__content-logo" />
-        <p class="footer__content-description">
-          Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through
-          a wealth of performance data and market research. We create science-based SEO strategies to empower our
-          clients.
-        </p>
-        <img src="src/static/dydin/pictures/socials.png" alt="socials" class="footer__content-socials" />
-      </div>
-      <div class="footer__content-menu">
-        <div class="footer__content-item">
-          <p class="footer__content-item-title">SERVICES</p>
-          <a class="footer__content-item-link" href="#">Case Studies</a>
-          <a class="footer__content-item-link" href="#">SEO</a>
-          <a class="footer__content-item-link" href="#">Research</a>
-          <a class="footer__content-item-link" href="#">Social Media</a>
-          <a class="footer__content-item-link" href="#">Content & PR</a>
-          <a class="footer__content-item-link" href="#">Payed Traffic</a>
-        </div>
-        <div class="footer__content-item">
-          <p class="footer__content-item-title">CONTACT US</p>
-          <a class="footer__content-item-link" href="#">(405) 555-0128</a>
-          <a class="footer__content-item-link" href="#">hello@createx.com</a>
-        </div>
-        <div class="footer__content-item">
-          <p class="footer__content-item-title">SIGN UP TO OUR NEWSLETTER</p>
-          <div class="footer__content-item-input-wrapper">
-            <input class="footer__content-item-input input" />
-            <img src="/src/static//dydin/svg/right.svg" alt="" class="footer__content-item-input-icon" />
-          </div>
-          <p class="footer__content-item-text">
-            *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
-          </p>
-        </div>
-      </div>
-      <div class="footer__content-reviews">
-        <img src="/src/static/dydin/pictures/review-1.png" alt="revie-1" class="footer__content-reviews-image" />
-        <img src="/src/static/dydin/pictures/review-2.png" alt="revie-2" class="footer__content-reviews-image" />
-        <img src="/src/static/dydin/pictures/review-3.png" alt="revie-3" class="footer__content-reviews-image" />
-        <img src="/src/static/dydin/pictures/review-4.png" alt="revie-4" class="footer__content-reviews-image" />
-      </div>
-    </div>
-    <div class="footer__made">
-      <p class="footer__made-text container">
-        © All rights reserved. Made with
-        <img src="/src/static/dydin/svg/heart.svg" alt="heart" class="footer__made-icon" />
-        by Createx Studio
-      </p>
-    </div>
-  </footer>
-</body>
 
+      <div class="successful">
+        <div class="successful__content">
+          <img class="successful__content-image" src="src/static/dydin/pictures/graph.jpg" alt="" />
+          <div class="successful__content-text">
+            <h3 class="successful__content-title">We go above and beyond to ensure successful SEO</h3>
+            <p class="successful__content-description">
+              Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra.
+              Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget
+              orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum
+              mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna
+              ultricies orci.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="seoservice">
+        <h3 class="seoservice__title">SEO services include</h3>
+        <div class="seoservice__content">
+          <div class="seoservice__content-item-1">
+            <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-options.svg" />
+            <h5 class="seoservice__content-title">SEO Strategy</h5>
+            <p class="seoservice__content-description">
+              Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+            </p>
+          </div>
+          <div class="seoservice__content-item-2">
+            <img class="seoservice__content-image" alt="analytics" src="/src/static/dydin/svg/ic-analytics.svg" />
+            <h5 class="seoservice__content-title">Competitor Analysis</h5>
+            <p class="seoservice__content-description">
+              Nulla id egestas accumsan consequat tincidunt. Urna nisi, nec sed massa pharetra duis ut porttitor.
+            </p>
+          </div>
+          <div class="seoservice__content-item-3">
+            <img class="seoservice__content-image" alt="target" src="/src/static/dydin/svg/ic-target.svg" />
+            <h5 class="seoservice__content-title">Technical Audit</h5>
+            <p class="seoservice__content-description">
+              Congue viverra in quis urna lectus proin massa. Aliquam, justo nisl sed diam nibh vehicula.
+            </p>
+          </div>
+          <div class="seoservice__content-item-4">
+            <img class="seoservice__content-image" alt="chart" src="/src/static/dydin/svg/ic-chart.svg" />
+            <h5 class="seoservice__content-title">Content Strategy</h5>
+            <p class="seoservice__content-description">
+              Posuere sed quam etiam semper id id euismod. Feugiat cras donec elementum interdum in.
+            </p>
+          </div>
+          <div class="seoservice__content-item-5">
+            <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-speaker.svg" />
+            <h5 class="seoservice__content-title">Media Promotion</h5>
+            <p class="seoservice__content-description">
+              Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
+              neque.
+            </p>
+          </div>
+          <div class="seoservice__content-item-6">
+            <img class="seoservice__content-image" alt="" src="/src/static/dydin/svg/ic-analysis.svg" />
+            <h5 class="seoservice__content-title">SEO Reports</h5>
+            <p class="seoservice__content-description">
+              Congue phasellus est, amet sem bibendum sollicitudin arcu scelerisque senectus. Mauris, mus tincidunt a,
+              nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h4 class="contact__text">Get a Free SEO Analysis!</h4>
+        <div class="contact__content">
+          <form class="contact__content-form">
+            <div class="contact__content-item">
+              <p class="contact__content-text">Name</p>
+              <input class="contact__content-input" type="text" placeholder="Your name" />
+            </div>
+            <div class="contact__content-item">
+              <p class="contact__content-text">Email</p>
+              <input class="contact__content-input" type="text" placeholder="Your working email" />
+            </div>
+            <div class="contact__content-item">
+              <p class="contact__content-text">Your website URL</p>
+              <input class="contact__content-input" type="text" placeholder="http://yoursite.com" />
+            </div>
+            <div class="contact__content-item">
+              <button class="contact__content-button">Analyse your site</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="information">
+        <h3 class="information__title">That's how it works</h3>
+        <div class="information__content">
+          <div class="information__content-item-1">
+            <h5 class="information__content-step">STEP 1</h5>
+            <h6 class="information__content-title">Off-Site SEO Analysis</h6>
+            <p class="information__content-text">
+              Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
+              neque.
+            </p>
+          </div>
+          <div class="information__content-item-2">
+            <h5 class="information__content-step">STEP 2</h5>
+            <h6 class="information__content-title">Technical SEO Optimizations</h6>
+            <p class="information__content-text">
+              Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas
+              laoreet etiam. Nunc nisl orci auctor et fames. Vestibulum viverra faucibus faucibus et convallis.
+            </p>
+          </div>
+          <div class="information__content-item-3">
+            <h5 class="information__content-step">STEP 3</h5>
+            <h6 class="information__content-title">Usability Check</h6>
+            <p class="information__content-text">
+              Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas
+              facilisi lobortis. Varius praesent pretium in leo, accumsan, in ultricies.
+            </p>
+          </div>
+          <div class="information__content-item-4">
+            <h5 class="information__content-step">STEP 4</h5>
+            <h6 class="information__content-title">Content Marketing</h6>
+            <p class="information__content-text">
+              Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor. Faucibus in leo, nulla
+              odio nulla imperdiet quis faucibus neque.
+            </p>
+          </div>
+          <div class="information__content-item-5"></div>
+        </div>
+      </div>
+      <div class="pricing">
+        <h3 class="pricing__text">Flexible pricing plans</h3>
+        <div class="pricing__tabs">
+          <button class="pricing__tabs-button">Monthly</button>
+          <button class="pricing__tabs-button pricing__tabs-button--disabled">Yearly</button>
+        </div>
+        <div class="pricing__content">
+          <div class="pricing__content-card">
+            <h5 class="pricing__content-title">Basic</h5>
+            <p class="pricing__content-price">$24</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Strategy & Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
+            </ul>
+            <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
+          </div>
+          <div class="pricing__content-card pricing__content-card--accent">
+            <h5 class="pricing__content-title">Optimal</h5>
+            <p class="pricing__content-price">$64</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item">Strategy & Marketing</li>
+              <li class="pricing__content-item pricing__content-item--disabled">Information Technology</li>
+            </ul>
+            <button class="pricing__content-button">Choose plan</button>
+          </div>
+          <div class="pricing__content-card">
+            <h5 class="pricing__content-title">Premium</h5>
+            <p class="pricing__content-price">$98</p>
+            <p class="pricing__content-line"></p>
+            <ul class="pricing__content-list">
+              <li class="pricing__content-item">Advanced Analytics</li>
+              <li class="pricing__content-item">Change Management</li>
+              <li class="pricing__content-item">Corporate Finance</li>
+              <li class="pricing__content-item">One Way Link Building</li>
+              <li class="pricing__content-item">Social Media Marketing</li>
+              <li class="pricing__content-item">Strategy & Marketing</li>
+              <li class="pricing__content-item">Information Technology</li>
+            </ul>
+            <button class="pricing__content-button pricing__content-button--outline">Choose plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="studies">
+      <div class="container">
+        <h3 class="studies__title">Related case studies</h3>
+        <div class="studies__content">
+          <div class="studies__content-card">
+            <img src="/src/static/dydin/pictures/national.png" alt="national" class="studies__content-image" />
+            <p class="studies__content-title">Charity organisation</p>
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description">
+              Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.
+            </p>
+            <div class="graph">
+              <div class="graph__content">
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/circle.svg"
+                    alt="circle-orange"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">90%</h4>
+                    <p class="graph__content-statistic-description">Engagement</p>
+                  </div>
+                </div>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse.svg"
+                    alt="ellipse-green"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">100%</h4>
+                    <p class="graph__content-statistic-description">Deliverability</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="studies__content-card studies__content-card--image">
+            <img
+              src="/src/static/dydin/pictures/national-health.png"
+              alt="national-health"
+              class="studies__content-image"
+            />
+            <p class="studies__content-title-image">Oil and natural resources</p>
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description-image">
+              With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase
+              in conversion rate.
+            </p>
+            <div class="graph">
+              <div class="graph__content">
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-blue.svg"
+                    alt="ellipse-blue"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title graph__content-statistic-title--image">200%</h4>
+                    <p class="graph__content-statistic-description graph__content-statistic-description--image">
+                      Growth in sales
+                    </p>
+                  </div>
+                </div>
+                <div class="graph__content-statistic">
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title graph__content-statistic-title--image">1,400</h4>
+                    <p class="graph__content-statistic-description graph__content-statistic-description--image">
+                      Target investors
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="studies__content-card">
+            <img src="/src/static/dydin/pictures/sunset.png" alt="sunset" class="studies__content-image" />
+            <p class="studies__content-title">Personal care</p>
+            <p class="studies__content-line"></p>
+            <p class="studies__content-description">
+              We helped Sunset company break through a noisy industry and better understand their buyer's journey.
+            </p>
+            <div class="graph">
+              <div class="graph__content">
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-red.svg"
+                    alt="ellipse-red"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">70%</h4>
+                    <p class="graph__content-statistic-description">Open Rate</p>
+                  </div>
+                </div>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-yellow.svg"
+                    alt="ellipse-yellow"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">200%</h4>
+                    <p class="graph__content-statistic-description">Growth in sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="studies__view">
+          <h4 class="studies__view-title">Explore more our clients` case studies</h4>
+          <button class="studies__view-button">View all case studies</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="other">
+        <h3 class="other__title">Other services</h3>
+        <div class="other__tabs">
+          <button class="other__tabs-button other__tabs-button--active">Social Media</button>
+          <button class="other__tabs-button">SEO</button>
+          <button class="other__tabs-button">Research</button>
+          <button class="other__tabs-button">Content & PR</button>
+          <button class="other__tabs-button">Payed Traffic</button>
+        </div>
+        <div class="other__content">
+          <div class="other__content-information">
+            <h5 class="other__content-information-title">Complete Worflow For Any SEO Professional</h5>
+            <ul class="other__content-information-list">
+              <li class="other__content-information-item">Aenean enim tellus morbi nisl vulputate dictumst.</li>
+              <li class="other__content-information-item">Nibh sapien volutpat lacus augue.</li>
+              <li class="other__content-information-item">Nibh sapien volutpat lacus augue.</li>
+              <li class="other__content-information-item">Gravida ornare sit in et ut sit sem id.</li>
+              <li class="other__content-information-item">Ultrices pellentesque dictum enim egestas ac diam.</li>
+              <li class="other__content-information-item">Sit semper enim senectus integer ut turpis et.</li>
+            </ul>
+            <div class="other__content-information-buttons">
+              <button class="other__content-information-button other__content-information-button--outline">
+                Learn more
+              </button>
+              <button class="other__content-information-button">Try SEO toolkit</button>
+            </div>
+          </div>
+          <div class="other__content-image-wrapper">
+            <img class="other__content-image" src="/src/static/dydin/pictures/illustration.png" alt="illustration" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__content-main">
+          <img src="src/static/dydin/svg/logo.svg" alt="logo-footer" class="footer__content-logo" />
+          <p class="footer__content-description">
+            Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through
+            a wealth of performance data and market research. We create science-based SEO strategies to empower our
+            clients.
+          </p>
+          <img src="src/static/dydin/pictures/socials.png" alt="socials" class="footer__content-socials" />
+        </div>
+        <div class="footer__content-menu">
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">SERVICES</p>
+            <a class="footer__content-item-link" href="#">Case Studies</a>
+            <a class="footer__content-item-link" href="#">SEO</a>
+            <a class="footer__content-item-link" href="#">Research</a>
+            <a class="footer__content-item-link" href="#">Social Media</a>
+            <a class="footer__content-item-link" href="#">Content & PR</a>
+            <a class="footer__content-item-link" href="#">Payed Traffic</a>
+          </div>
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">CONTACT US</p>
+            <a class="footer__content-item-link" href="#">(405) 555-0128</a>
+            <a class="footer__content-item-link" href="#">hello@createx.com</a>
+          </div>
+          <div class="footer__content-item">
+            <p class="footer__content-item-title">SIGN UP TO OUR NEWSLETTER</p>
+            <div class="footer__content-item-input-wrapper">
+              <input class="footer__content-item-input input" />
+              <img src="/src/static//dydin/svg/right.svg" alt="" class="footer__content-item-input-icon" />
+            </div>
+            <p class="footer__content-item-text">
+              *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+            </p>
+          </div>
+        </div>
+        <div class="footer__content-reviews">
+          <img src="/src/static/dydin/pictures/review-1.png" alt="revie-1" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-2.png" alt="revie-2" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-3.png" alt="revie-3" class="footer__content-reviews-image" />
+          <img src="/src/static/dydin/pictures/review-4.png" alt="revie-4" class="footer__content-reviews-image" />
+        </div>
+      </div>
+      <div class="footer__made">
+        <p class="footer__made-text container">
+          © All rights reserved. Made with
+          <img src="/src/static/dydin/svg/heart.svg" alt="heart" class="footer__made-icon" />
+          by Createx Studio
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
