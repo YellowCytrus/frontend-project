@@ -35,7 +35,7 @@
   },
 
   // === Подключаем линтеры ===
-  "stylelint.validate": ["css", "html"],
+  "stylelint.validate": ["css"],
   "eslint.validate": ["javascript", "html"],
 
   // === Prettier ===
