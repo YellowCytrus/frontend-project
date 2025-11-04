@@ -1,42 +1,48 @@
 {
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig, postcss.config.js,.stylelintrc, .stylelintignore"
-  },
-
-  "css.validate": false,
+  // === Основное ===
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": "explicit"
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
 
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // === Для CSS ===
   "[css]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  // === Для HTML ===
   "[html]": {
-    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  // === Для JS ===
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "editor.formatOnPaste": true,
-
-  // Live Share port forwarding settings
-  "liveShare.portsAttributes": {
-    "5173": {
-      "label": "Vite Dev Server",
-      "onAutoForward": "notify",
-      "protocol": "http"
-    }
+  // === Для файлов, которые не нужно трогать ===
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
   },
-  "liveShare.autoShareServers": true,
-  "liveShare.autoShareTerminals": true,
-  "liveShare.enablePortForwarding": true
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+
+  // === Подключаем линтеры ===
+  "stylelint.validate": ["css", "html"],
+  "eslint.validate": ["javascript", "html"],
+
+  // === Prettier ===
+  "prettier.requireConfig": true,
+  "prettier.enable": true,
+
+  // === Прочее ===
+  "editor.tabSize": 2,
+  "files.eol": "\n"
 }

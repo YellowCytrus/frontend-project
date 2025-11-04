@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1e212c;
+  background-color: var(--color-bg-dark);
   padding-top: 80px;
 }
 
@@ -9,14 +9,14 @@
   font-weight: 400;
   opacity: 0.6;
   padding-bottom: 8px;
-  color: white;
+  color: var(--color-text-white);
 }
 
 .footer__content-item-title {
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
-  color: white;
+  color: var(--color-text-white);
   padding-bottom: 12px;
 }
 
@@ -26,7 +26,7 @@
   line-height: 150%;
   font-weight: 400;
   opacity: 0.6;
-  color: white;
+  color: var(--color-text-white);
   padding-bottom: 38px;
 }
 
@@ -54,7 +54,7 @@
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-top: 1px solid rgb(255 255 255 / 10%);
+  border-top: 1px solid var(--color-border-white-light);
 }
 
 .footer__content-reviews-image {
@@ -73,7 +73,7 @@
   padding: 7px 30px 7px 7px;
   box-sizing: border-box;
   flex: 1;
-  border: 1px solid rgb(255 255 255 / 20%);
+  border: 1px solid var(--color-border-white);
   border-radius: 4px;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .footer__made {
-  background-color: #292c37;
+  background-color: var(--color-bg-dark-secondary);
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
@@ -97,7 +97,7 @@
 }
 
 .footer__made-text {
-  color: white;
+  color: var(--color-text-white);
   font-size: 12px;
   line-height: 150%;
   display: flex;
@@ -114,7 +114,7 @@
 
 .footer__content-item-text {
   font-size: 10px;
-  color: white;
+  color: var(--color-text-white);
   padding-top: 12px;
   line-height: 150%;
 }

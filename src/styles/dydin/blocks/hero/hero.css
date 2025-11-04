@@ -26,7 +26,7 @@
 }
 
 .hero__content-link {
-  color: white;
+  color: var(--color-text-white);
   text-decoration: none;
   font-size: 14px;
   line-height: 150%;
@@ -49,7 +49,7 @@
 }
 
 .hero__content-text {
-  color: white;
+  color: var(--color-text-white);
   font-size: 14px;
   line-height: 150%;
   opacity: 0.6;
@@ -58,14 +58,14 @@
 .hero__content-title {
   font-size: 72px;
   font-weight: 900;
-  color: white;
+  color: var(--color-text-white);
   line-height: 130%;
   text-align: center;
   padding-bottom: 24px;
 }
 
 .hero__content-description {
-  color: white;
+  color: var(--color-text-white);
   opacity: 0.6;
   line-height: 150%;
   font-size: 20px;

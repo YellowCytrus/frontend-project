@@ -1,0 +1,48 @@
+/* Light theme colors */
+:root {
+  /* Primary colors */
+  --color-primary: #7772f1;
+  --color-primary-accent: #03cea4;
+  
+  /* Background colors */
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #f4f5f6;
+  --color-bg-dark: #1e212c;
+  --color-bg-dark-secondary: #292c37;
+  --color-bg-overlay: rgb(0 0 0 / 95%);
+  
+  /* Text colors */
+  --color-text-primary: #1e212c;
+  --color-text-secondary: #787a80;
+  --color-text-tertiary: #9a9ca5;
+  --color-text-white: white;
+  --color-text-inverse: white;
+  
+  /* Border colors */
+  --color-border-primary: #e5e8ed;
+  --color-border-secondary: #dadbdd;
+  --color-border-accent: rgb(119 114 241 / 40%);
+  --color-border-white: rgb(255 255 255 / 20%);
+  --color-border-white-light: rgb(255 255 255 / 10%);
+  
+  /* Shadow colors */
+  --color-shadow-light: rgb(154 156 165 / 8%);
+  --color-shadow-medium: rgb(154 156 165 / 5%);
+  --color-shadow-small: rgb(154 156 165 / 4%);
+  --color-shadow-dark: rgb(30 33 44 / 3%);
+  --color-shadow-dark-large: rgb(30 33 44 / 16%);
+  --color-shadow-dark-medium: rgb(30 33 44 / 10%);
+  --color-shadow-dark-small: rgb(30 33 44 / 8%);
+  --color-shadow-dark-tiny: rgb(30 33 44 / 5%);
+  
+  /* Gradient colors */
+  --color-gradient-border-start: #dadbdd00;
+  --color-gradient-border-middle: #dadbdd;
+  --color-gradient-border-end: #dadbdd00;
+  --color-overlay-dark: rgb(0 0 0 / 50%);
+  
+  /* Input colors */
+  --color-input-bg: #ffffff1f;
+  --color-input-border: rgb(255 255 255 / 20%);
+}
+
