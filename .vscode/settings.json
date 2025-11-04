@@ -26,5 +26,17 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+
+  // Live Share port forwarding settings
+  "liveShare.portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "notify",
+      "protocol": "http"
+    }
+  },
+  "liveShare.autoShareServers": true,
+  "liveShare.autoShareTerminals": true,
+  "liveShare.enablePortForwarding": true
 }
