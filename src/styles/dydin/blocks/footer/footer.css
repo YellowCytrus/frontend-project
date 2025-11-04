@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1e212c;
+  background-color: var(--color-bg-dark);
   padding-top: 80px;
 }
 
@@ -9,14 +9,14 @@
   font-weight: 400;
   opacity: 0.6;
   padding-bottom: 8px;
-  color: white;
+  color: var(--color-text-white);
 }
 
 .footer__content-item-title {
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
-  color: white;
+  color: var(--color-text-white);
   padding-bottom: 12px;
 }
 
@@ -26,20 +26,20 @@
   line-height: 150%;
   font-weight: 400;
   opacity: 0.6;
-  color: white;
+  color: var(--color-text-white);
   padding-bottom: 38px;
 }
 
 .footer__content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 
 .footer__content-menu {
   display: grid;
-  grid-template-columns: auto auto auto 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .footer__content-item {
@@ -50,10 +50,16 @@
 .footer__content-reviews {
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-top: 1px solid rgb(255 255 255 / 10%);
+  border-top: 1px solid var(--color-border-white-light);
+}
+
+.footer__content-reviews-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer__content-item-input-wrapper {
@@ -67,7 +73,7 @@
   padding: 7px 30px 7px 7px;
   box-sizing: border-box;
   flex: 1;
-  border: 1px solid rgb(255 255 255 / 20%);
+  border: 1px solid var(--color-border-white);
   border-radius: 4px;
 }
 
@@ -82,7 +88,7 @@
 }
 
 .footer__made {
-  background-color: #292c37;
+  background-color: var(--color-bg-dark-secondary);
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
@@ -91,7 +97,7 @@
 }
 
 .footer__made-text {
-  color: white;
+  color: var(--color-text-white);
   font-size: 12px;
   line-height: 150%;
   display: flex;
@@ -108,7 +114,35 @@
 
 .footer__content-item-text {
   font-size: 10px;
-  color: white;
+  color: var(--color-text-white);
   padding-top: 12px;
   line-height: 150%;
+}
+
+/* Media queries для адаптивности */
+@media (width < 768px) {
+  .footer__content {
+    gap: 30px;
+  }
+
+  .footer__content-menu {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__content {
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+  }
+
+  .footer__content-menu {
+    grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto) 1fr;
+    gap: 30px;
+  }
 }

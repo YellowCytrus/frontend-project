@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Денис Дыдин - КИ23-14Б</title>
 
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
     <link rel="stylesheet" href="./src/styles/dydin/main.css" />
   </head>
+
   <body>
     <script type="module" src="/src/dydin.js"></script>
     <div class="hero">
       <header class="header container">
         <nav class="nav">
           <div class="nav__content">
-            <img class="logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
+            <img class="nav__logo" src="src/static/dydin/svg/logo.svg" alt="logo" />
             <ul class="nav__content-list">
               <li class="nav__content-item">
                 <a class="nav__content-link--chevron" href="#">Services</a>
@@ -40,6 +35,35 @@
             </ul>
           </div>
           <button class="nav__button button">Talk to a human</button>
+          <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <input type="checkbox" id="nav__burger-toggle" class="nav__burger-checkbox" />
+          <label for="nav__burger-toggle" class="nav__burger" aria-label="Toggle menu">
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+          </label>
+          <div class="nav__menu">
+            <div class="nav__menu-content">
+              <ul class="nav__menu-list">
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Services</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Case Studies</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">About Us</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Blog</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a class="nav__menu-link" href="#">Contacts</a>
+                </li>
+              </ul>
+              <label for="nav__burger-toggle" class="nav__menu-button button">Talk to a human</label>
+            </div>
+          </div>
         </nav>
       </header>
       <div class="hero__content">
@@ -81,15 +105,17 @@
       </div>
     </div>
     <div class="container">
-      <div class="cooperation"></div>
-      <div class="cooperation__content">
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-1.png" alt="coop1" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-2.png" alt="coop2" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-3.png" alt="coop3" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-4.png" alt="coop4" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-5.png" alt="coop5" />
-        <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-6.png" alt="coop1" />
+      <div class="cooperation">
+        <div class="cooperation__content">
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-1.png" alt="coop1" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-2.png" alt="coop2" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-3.png" alt="coop3" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-4.png" alt="coop4" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-5.png" alt="coop5" />
+          <img class="cooperation__content-image" src="src/static/dydin/pictures/coop-6.png" alt="coop1" />
+        </div>
       </div>
+
       <div class="successful">
         <div class="successful__content">
           <img class="successful__content-image" src="src/static/dydin/pictures/graph.jpg" alt="" />
@@ -213,7 +239,6 @@
           </div>
           <div class="information__content-item-5"></div>
         </div>
-        <div class="hero__shape"></div>
       </div>
       <div class="pricing">
         <h3 class="pricing__text">Flexible pricing plans</h3>
@@ -283,20 +308,32 @@
             </p>
             <div class="graph">
               <div class="graph__content">
-                <img class="graph__content-image" src="src/static/dydin/svg/circle.svg" alt="circle-orange" />
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title">90%</h4>
-                  <p class="graph__content-description">Engagement</p>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/circle.svg"
+                    alt="circle-orange"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">90%</h4>
+                    <p class="graph__content-statistic-description">Engagement</p>
+                  </div>
                 </div>
-                <img class="graph__content-image" src="src/static/dydin/svg/ellipse.svg" alt="ellipse-green" />
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title">100%</h4>
-                  <p class="graph__content-description">Deliverability</p>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse.svg"
+                    alt="ellipse-green"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">100%</h4>
+                    <p class="graph__content-statistic-description">Deliverability</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="studies__content-card-image">
+          <div class="studies__content-card studies__content-card--image">
             <img
               src="/src/static/dydin/pictures/national-health.png"
               alt="national-health"
@@ -310,14 +347,26 @@
             </p>
             <div class="graph">
               <div class="graph__content">
-                <img class="graph__content-image" src="src/static/dydin/svg/ellipse-blue.svg" alt="ellipse-blue" />
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title-image">200%</h4>
-                  <p class="graph__content-description-image">Growth in sales</p>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-blue.svg"
+                    alt="ellipse-blue"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title graph__content-statistic-title--image">200%</h4>
+                    <p class="graph__content-statistic-description graph__content-statistic-description--image">
+                      Growth in sales
+                    </p>
+                  </div>
                 </div>
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title-image">1,400</h4>
-                  <p class="graph__content-description-image">Target investors</p>
+                <div class="graph__content-statistic">
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title graph__content-statistic-title--image">1,400</h4>
+                    <p class="graph__content-statistic-description graph__content-statistic-description--image">
+                      Target investors
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -331,15 +380,27 @@
             </p>
             <div class="graph">
               <div class="graph__content">
-                <img class="graph__content-image" src="src/static/dydin/svg/ellipse-red.svg" alt="ellipse-red" />
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title">70%</h4>
-                  <p class="graph__content-description">Open Rate</p>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-red.svg"
+                    alt="ellipse-red"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">70%</h4>
+                    <p class="graph__content-statistic-description">Open Rate</p>
+                  </div>
                 </div>
-                <img class="graph__content-image" src="src/static/dydin/svg/ellipse-yellow.svg" alt="ellipse-yellow" />
-                <div class="graph__content-information">
-                  <h4 class="graph__content-title">200%</h4>
-                  <p class="graph__content-description">Growth in sales</p>
+                <div class="graph__content-statistic">
+                  <img
+                    class="graph__content-statistic-image"
+                    src="src/static/dydin/svg/ellipse-yellow.svg"
+                    alt="ellipse-yellow"
+                  />
+                  <div class="graph__content-statistic-information">
+                    <h4 class="graph__content-statistic-title">200%</h4>
+                    <p class="graph__content-statistic-description">Growth in sales</p>
+                  </div>
                 </div>
               </div>
             </div>
