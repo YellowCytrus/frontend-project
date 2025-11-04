@@ -208,3 +208,15 @@
     padding-right: 20px;
   }
 }
+
+@media (width >= 1279px) {
+  .nav__content {
+    display: flex;
+  }
+}
+
+@media (width >= 639px) {
+  .block {
+    display: flex;
+  }
+}
