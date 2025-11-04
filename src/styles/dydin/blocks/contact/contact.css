@@ -21,9 +21,6 @@
   color: white;
 }
 
-.contact__content {
-}
-
 .contact__content-form {
   display: flex;
   gap: 24px;
@@ -73,4 +70,10 @@
   text-align: center;
   background-color: #1e212c;
   color: white;
+}
+
+@media (width <= 768px) {
+  .contact__content-form {
+    flex-wrap: wrap;
+  }
 }

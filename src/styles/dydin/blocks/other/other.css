@@ -113,3 +113,29 @@
   padding: 40px;
   padding-bottom: 83px;
 }
+
+@media (width <= 768px) {
+  .other__title {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+
+  .other__tabs {
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+
+  .other__content {
+    flex-direction: column-reverse;
+  }
+
+  .other__content-information {
+    text-align: center;
+  }
+
+  .other__content-information-buttons {
+    justify-content: center;
+  }
+}

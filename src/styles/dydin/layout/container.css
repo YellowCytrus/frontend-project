@@ -2,3 +2,17 @@
   padding-left: 18%;
   padding-right: 18%;
 }
+
+@media (width <= 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (769px <= width <=1280px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

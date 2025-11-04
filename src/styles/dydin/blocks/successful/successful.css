@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 180px;
+  gap: clamp(40px, 6vw, 140px);
 }
 
 .successful__content-title {
@@ -21,10 +22,38 @@
 }
 
 .successful__content-image {
-  width: 705px;
   border-radius: 4px;
+  flex: 1 1 auto;
+  width: clamp(280px, 40vw, 600px);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-width: 0;
 }
 
 .successful__content-text {
   max-width: 390px;
+}
+
+@media (width <= 768px) {
+  .successful__content-image {
+    width: 100%;
+  }
+
+  .successful__content {
+    flex-wrap: wrap;
+    place-content: center center;
+    padding-bottom: 40px;
+  }
+
+  .successful__content-title {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .successful__content-text {
+    max-width: none;
+    text-align: center;
+  }
 }

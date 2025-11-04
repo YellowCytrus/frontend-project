@@ -40,3 +40,34 @@
   border-radius: 0 4px 4px 0;
   border: none;
 }
+
+@media (769px <= width <=1440px) {
+  .analyse__content-text {
+    font-size: 14px;
+  }
+
+  .analyse__content-button {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 768px) {
+  .analyse__content-input {
+    padding: 6px 7px;
+  }
+
+  .analyse__content-button {
+    padding: 6px 7px;
+    font-size: 12px;
+  }
+
+  .analyse__content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .analyse__content-text {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}

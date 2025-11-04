@@ -32,14 +32,14 @@
 
 .footer__content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 
 .footer__content-menu {
   display: grid;
-  grid-template-columns: auto auto auto 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .footer__content-item {
@@ -50,10 +50,16 @@
 .footer__content-reviews {
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.footer__content-reviews-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer__content-item-input-wrapper {
@@ -111,4 +117,32 @@
   color: white;
   padding-top: 12px;
   line-height: 150%;
+}
+
+/* Media queries для адаптивности */
+@media (width < 768px) {
+  .footer__content {
+    gap: 30px;
+  }
+
+  .footer__content-menu {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__content {
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+  }
+
+  .footer__content-menu {
+    grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto) 1fr;
+    gap: 30px;
+  }
 }
