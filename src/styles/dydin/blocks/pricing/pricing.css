@@ -128,7 +128,12 @@
 
 .pricing__content-line {
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--color-gradient-border-start) 0%, var(--color-gradient-border-middle) 50%, var(--color-gradient-border-end) 100%);
+  border-image: linear-gradient(
+    to right,
+    var(--color-gradient-border-start) 0%,
+    var(--color-gradient-border-middle) 50%,
+    var(--color-gradient-border-end) 100%
+  );
   border-image-slice: 1;
   padding-bottom: 15px;
 }
@@ -247,7 +252,8 @@
     width: 100%;
     padding: 10px 0;
   }
-  .pricing__text{
+
+  .pricing__text {
     font-weight: 700;
     font-size: 32px;
   }

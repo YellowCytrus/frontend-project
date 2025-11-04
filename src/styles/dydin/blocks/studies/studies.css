@@ -36,7 +36,8 @@
 
 .studies__content-card--image {
   background-image:
-    linear-gradient(var(--color-overlay-dark), var(--color-overlay-dark)), url('/src/static/dydin/pictures/background-card.png');
+    linear-gradient(var(--color-overlay-dark), var(--color-overlay-dark)),
+    url('/src/static/dydin/pictures/background-card.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
@@ -52,7 +53,12 @@
 
 .studies__content-line {
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--color-gradient-border-start) 0%, var(--color-gradient-border-middle) 50%, var(--color-gradient-border-end) 100%);
+  border-image: linear-gradient(
+    to right,
+    var(--color-gradient-border-start) 0%,
+    var(--color-gradient-border-middle) 50%,
+    var(--color-gradient-border-end) 100%
+  );
   border-image-slice: 1;
   padding-top: 20px;
 }
@@ -113,10 +119,12 @@
   .studies__content {
     flex-direction: column;
   }
-  .studies__title{
+
+  .studies__title {
     font-weight: 700;
     font-size: 32px;
   }
+
   .studies__view-button {
     padding: 6px 7px;
     line-height: 20px;

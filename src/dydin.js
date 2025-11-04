@@ -1,3 +1,4 @@
+/* global setTimeout, localStorage */
 console.log('Страница Дениса Дыдина загружена');
 
 (function () {
