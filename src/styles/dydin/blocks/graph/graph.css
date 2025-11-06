@@ -9,6 +9,7 @@
   gap: 1vw;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .graph__content-statistic-image {
@@ -49,7 +50,14 @@
   color: var(--color-text-white);
 }
 
-@media (769px <= width <=1440px) {
+@media (769px <=width <=1440px) {
+  .graph__content {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (width <=320px) {
   .graph__content {
     flex-wrap: wrap;
   }

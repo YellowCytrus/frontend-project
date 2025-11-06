@@ -41,7 +41,7 @@
   border: none;
 }
 
-@media (769px <= width <=1440px) {
+@media (769px <=width <=1440px) {
   .analyse__content-text {
     font-size: 14px;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .analyse__content-input {
     padding: 6px 7px;
   }

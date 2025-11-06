@@ -114,12 +114,16 @@
   padding-bottom: 83px;
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .other__title {
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 40px;
     padding-top: 50px;
+  }
+
+  .other__content-information-item {
+    text-wrap: wrap;
   }
 
   .other__tabs {

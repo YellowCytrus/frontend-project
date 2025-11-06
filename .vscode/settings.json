@@ -9,7 +9,7 @@
 
   // === Для CSS ===
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
 
   // === Для HTML ===
