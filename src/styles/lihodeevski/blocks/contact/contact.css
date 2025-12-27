@@ -1,0 +1,79 @@
+.contact {
+  background: var(--color-primary);
+  box-shadow:
+    0 80px 80px -20px var(--color-shadow-light),
+    0 30px 24px -10px var(--color-shadow-medium),
+    0 12px 10px -6px var(--color-shadow-small),
+    0 4px 4px -4px var(--color-shadow-dark);
+  border-radius: 4px;
+  background-image: url('/src/static/lihodeevski/pictures/lines-and_dots.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px 60px;
+}
+
+.contact__text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  padding-bottom: 32px;
+  color: var(--color-text-white);
+}
+
+.contact__content-form {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.contact__content-text {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-text-white);
+}
+
+.contact__content-item {
+  width: 100%;
+}
+
+.contact__content-input {
+  padding: 11px 16px;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  line-height: 150%;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact__content-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact__content-input::placeholder {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.contact__content-button {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  border: 1px;
+  border-color: var(--color-text-primary);
+  text-align: center;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-white);
+}
+
+@media (width <=768px) {
+  .contact__content-form {
+    flex-wrap: wrap;
+  }
+}

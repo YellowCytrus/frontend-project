@@ -1,0 +1,117 @@
+.hero {
+  background: url('/src/static/lihodeevski/pictures/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__content {
+  min-height: 653px;
+}
+
+.hero__content-information {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 60px;
+}
+
+.hero__content-route {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 80px 20% 40px;
+}
+
+.hero__content-item {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content-link {
+  color: var(--color-text-white);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+}
+
+.hero__content-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.hero__content-separator {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content-chevron {
+  width: 16px;
+  height: 16px;
+}
+
+.hero__content-text {
+  color: var(--color-text-white);
+  font-size: 14px;
+  line-height: 100%;
+  text-wrap: nowrap;
+  opacity: 0.6;
+}
+
+.hero__content-title {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--color-text-white);
+  line-height: 130%;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.hero__content-description {
+  color: var(--color-text-white);
+  opacity: 0.6;
+  line-height: 150%;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (769px <=width <=1440px) {
+  .hero__content-title {
+    font-size: 48px;
+  }
+
+  .hero__content-description {
+    font-size: 16px;
+  }
+}
+
+@media (width <=768px) {
+  .hero__content-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .hero__content-description {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .hero__content-text {
+    font-size: 12px;
+  }
+
+  .hero__content-link {
+    font-size: 12px;
+  }
+
+  .hero__content-chevron {
+    width: 12px;
+    height: 12px;
+  }
+
+  .hero__content-icon {
+    width: 12px;
+    height: 12px;
+  }
+}

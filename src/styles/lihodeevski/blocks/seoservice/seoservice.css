@@ -1,0 +1,120 @@
+.seoservice {
+  padding-bottom: 120px;
+}
+
+.seoservice__title {
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 46px);
+  padding-bottom: clamp(30px, 5vw, 60px);
+  line-height: 130%;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.seoservice__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: linear-gradient(
+    to right,
+    var(--color-gradient-border-start) 0%,
+    var(--color-gradient-border-middle) 50%,
+    var(--color-gradient-border-end) 100%
+  );
+}
+
+.seoservice__content-item {
+  padding-left: clamp(20px, 6vw, 50px);
+  padding-right: clamp(20px, 6vw, 50px);
+  padding-bottom: clamp(20px, 4vw, 40px);
+  background: var(--color-bg-primary);
+}
+
+.seoservice__content-item--4,
+.seoservice__content-item--5,
+.seoservice__content-item--6 {
+  background: var(--color-bg-primary);
+  padding-top: 1vw;
+}
+
+.seoservice__content-image {
+  width: 15%;
+  padding-bottom: 1vw;
+}
+
+.seoservice__content-title {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0.5vw;
+  line-height: 150%;
+  color: var(--color-text-primary);
+}
+
+.seoservice__content-description {
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-text-secondary);
+}
+
+.studies__view-title {
+  text-align: center;
+}
+
+@media (769px <=width <=1440px) {
+  .seoservice__content {
+    font-size: 16px;
+  }
+}
+
+@media (width <=768px) {
+  .seoservice__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-border-start) 0%,
+      var(--color-gradient-border-middle) 50%,
+      var(--color-gradient-border-end) 100%
+    );
+  }
+
+  .seoservice__content-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .seoservice__content-title {
+    font-size: 20px;
+  }
+
+  .seoservice__content-description {
+    font-size: 14px;
+  }
+
+  .seoservice__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .seoservice__content-item--3,
+  .seoservice__content-item--4,
+  .seoservice__content-item--5,
+  .seoservice__content-item--6 {
+    padding-top: 15px;
+  }
+}
+
+@media (width <=320px) {
+  .seoservice__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    background: linear-gradient(
+      to right,
+      var(--color-gradient-border-start) 0%,
+      var(--color-gradient-border-middle) 50%,
+      var(--color-gradient-border-end) 100%
+    );
+  }
+}
